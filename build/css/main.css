@@ -13,12 +13,9 @@ h1, h2, h3, h4, h5, h6 {
 html * {
     margin: 0;
 }
-
 #main {
-    margin-bottom: 20px;
-    margin-top: 83px;
+  margin-top:83px;
 }
-
 body {
     background: #ffffff;
     color: #333333;
