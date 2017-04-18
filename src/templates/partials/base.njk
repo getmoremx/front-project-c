@@ -7,13 +7,19 @@
     {% block extra_css %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
   </head>
   <body>
     <div id="page">
       {% include 'partials/navbar.njk' %}
-      <main>
+      <main id="main">
         {% block content %}{% endblock %}
       </main>
       {% include 'partials/footer.njk' %}

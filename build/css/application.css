@@ -1,0 +1,350 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require fonts
+*= require footer
+*= require header
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+.hamburger {
+    padding: 0px;
+    display: none;
+}
+.hamburger:active {
+    outline: none;
+}
+.hamburger:focus {
+    outline: none;
+}
+.hamburger-box {
+    width: 30px;
+}
+.hamburger-inner {
+    width: 30px;
+    height: 3px;
+    background-color: #ff9a00;
+}
+.hamburger-inner::after {
+    top: -14px !important;
+    width: 30px;
+    height: 3px;
+    background-color: #ff9a00;
+}
+.hamburger-inner::before {
+    top: -7px;
+    width: 30px;
+    height: 3px;
+    background-color: #ff9a00;
+}
+.add-background {
+    background: url(background/cierralo-n-e-wfinal-01.png);
+    background-size: 100%;
+}
+.add-background-white {
+    background: white;
+}
+.cierralo-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    top:0;
+    background: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+section {
+    width:100%;
+}
+.mainLogo {
+    width: 83px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.cierralo-aling-end {
+    align-items: flex-end;
+}
+.cierralo-strong-font {
+    font-family: 'HelveticaNeue-bold';
+}
+.cierralo-flex-colum {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.cierralo-primary-color {
+    color: #e66700;
+}
+.cierralo-broken-color {
+    color: #AAAAAA;
+}
+.cierralo-button-header > a:hover {
+    color: #ffffff;
+    font-family: 'HelveticaNeue-Medium';
+}
+.cierralo-default-btn {
+    width: 128px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    margin:0 10px;
+    padding: 11px 23px;
+}
+.cierralo-default-btn:focus {
+    outline:none;
+}
+.cierralo-buttons-container {
+    margin-top: 26px;
+}
+.cierralo-btn-secondary {
+    background-color: #e66700;
+    color: white;
+    font-size:14px;
+}
+
+.cierralo-btn-primary {
+    background-color: #f7971c;
+}
+.cierralo-button-header > a {
+    color: #ffffff;
+}
+.cierralo-button-header {
+    background: #e66700;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    padding: 5px 19px !important;
+}
+
+.cierralo-flex-row {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.cierralo-text-center {
+    text-align: center;
+}
+
+.stronger {
+    font-weight: bold;
+}
+.border {
+    border: 2px solid white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 7px;
+    padding-left: 10px ;
+    padding-right: 10px !important;
+}
+.navbar {
+    min-height: 76px !important;
+}
+.brand {
+    font-family: 'PT Sans', sans-serif;
+}
+span.mainLogo {
+    font-size: 25pt;
+    font-weight: bold;
+}
+span.textLogo {
+    font-size: 12pt;
+    letter-spacing: 6px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -25px;
+}
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-top {
+    max-width: 50%;
+    width: 45px;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 25pt;
+    margin-top: 60px;
+}
+.square {
+    border: 1px solid black;
+    width: 50%;
+}
+.form-sketch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noLeftPadding {
+    width: 150px !important;
+    background: white;
+    color: white;
+    border: none;
+}
+.label {
+    color: #4a4a4a;
+}
+.size {
+    width: 500px;
+}
+.subtitle {
+    color: #aaaaaa;
+    font-size: 12pt;
+    padding: 5px;
+}
+.vertical {
+    flex-direction: column;
+}
+.logoFb {
+    width: 20px;
+    margin-right: 18px;
+}
+.buttonFB {
+    background: #3a5998;
+    color: white;
+}
+.buttonG {
+    background: white;
+    border: 1px solid #e5e5e5;
+    color: #9b9b9b;
+}
+.button {
+    padding: 12px;
+    margin: 4px;
+    font-size: 13pt;
+    text-decoration: none;
+    padding-left: 20px;
+    width: 260px;
+}
+.text-brand {
+    font-family: 'Nunito', sans-serif;
+}
+.navbar-default a{
+    font-size: 14px !important
+}
+.border > a {
+    padding: 5px !important;
+}
+.navbar-default, .navbar-static-top {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-color: white;
+    color: #9b9b9b;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:15px;
+    text-align: left;
+    line-height: 1.7;
+    padding: 1em;
+}
+.footer-square {
+    width: 300px;
+}
+
+.change-width {
+    width: 225px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+.marginTop {
+    margin-top: -13px;
+}
+.marginMoreTop {
+    margin-top: -10px;
+}
+.margin-top-3 {
+    margin-top: -5px;
+}
+.end {
+    align-items: flex-end !important;
+}
+.footer-font-left {
+    font-size: 10pt;
+    text-align: left;
+}
+.footer-font-right {
+    font-size: 15px;
+    text-align: right;
+}
+.fotter-font-middle-bottom {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.navbar-brand {
+    text-decoration: none;
+    margin-left: 84px;
+}
+.middle-width {
+    width: 400px;
+}
+
+.cierralo-max-width {
+    width:100%;
+    justify-content: space-between !important;
+}
+
+.cierralo-no-center {
+    align-items:baseline !important;
+}
+.cierralo-row-one {
+    margin-bottom: 30px;
+    margin-left: 140px;
+    align-items: flex-start !important;
+    margin-top: 41px;
+}
+.cierralo-phone {
+    text-decoration: none;
+    color: #9b9b9b;
+}
+.cierralo-footer-divider {
+    border-bottom:1px solid #e5e5e5;
+    height:1px;
+    width:80%;
+    margin-bottom:28px;
+}
+.cierralo-footer-last-text {
+    width: 30%;
+    justify-content: space-between;
+}
+.cierralo-footer-list {
+    list-style: none;
+}
+.cierralo-remove-margin {
+    margin-top: 10px;
+}
+.cierralo-add-padding-left {
+    padding-left:9px;
+}
+.fitLogo {
+    width: 193px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}

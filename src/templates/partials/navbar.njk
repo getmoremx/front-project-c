@@ -1,16 +1,27 @@
-<nav class="site-navbar">
-  <div class="site-navbar__desktop-logo-container">
-    <a href="index.html"><img src="#" alt="Logo"></a> {# Change #}
-  </div>
-  <div class="site-navbar__menu-trigger">
-    <span class="fa fa-bars"></span>
-  </div>
-  <div class="site-navbar__menu-container">
-    <div class="site-navbar__mobile-logo-container">
-      <a href="index.html"><img src="#" alt="Logo"></a> {# Change #}
-    </div>
-    <div class="site-navbar__menu">
-      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">Home</a>
-    </div>
-  </div>
+<button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>
+<nav id="navigation" class="cierralo-navbar">
+    <a class="navbar-brand" href="/">
+        <img src="/img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
+    </a>
+    <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Propiedades</a></li>
+            <li><a href="#">Vendedores</a></li>
+            <li><a href="#">Compradores</a></li>
+            <li><a href="/home/signUp">Regístrate</a></li>
+            <li><a href="/login/auth">Inicia sesión</a></li>
+            <li class="cierralo-button-header cierralo-font-helveltica-medium"><a class="cierralo-font-helveltica-medium" href="#">Contacto</a></li>
+        </ul>
+        <div hidden="" class="cierralo-show-in-movil">
+            <a class="cierralo-center-flex" href="/">
+                <img src="/img/android-chrome-192x192.png" class="cierralo-logo-comparative">
+            </a>
+        </div>
+    </ul>
 </nav>
