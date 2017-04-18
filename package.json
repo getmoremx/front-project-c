@@ -39,5 +39,30 @@
     "stylus-iconfont": "^0.10.1",
     "stylus-import-tree": "^0.1.10",
     "yargs": "^7.1.0"
+  },
+  "dependencies": {
+    "autoprefixer-stylus": "^0.13.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "main-bower-files": "^2.13.1",
+    "nunjucks": "^3.0.0",
+    "portfinder": "^1.0.13",
+    "require-dir": "^0.3.1",
+    "stylus-iconfont": "^0.10.1",
+    "stylus-import-tree": "^0.1.10",
+    "yargs": "^7.1.0"
   }
 }
