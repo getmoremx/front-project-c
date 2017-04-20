@@ -147,6 +147,16 @@
 	padding-top: 0px;
 	padding-bottom: 20px;
 }
+.cierralo-more-btn {
+    width: 128px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    margin: 0 10px;
+    padding: 11px 23px;
+}
 .cierralo-building-more-btn {
     width: 79px;
     height: 22.8px;
