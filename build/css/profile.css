@@ -1,0 +1,276 @@
+.navbar-user-photo-circle{
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+}
+.padding-top-20{
+    padding-top: 25px !important;
+}
+.navbar-divider{
+    width: 1px;
+    height: 26px;
+    margin-top: 3px;
+    border-left: 1px solid #979797;
+    margin-left: 20px;
+}
+.navbar-user-info{
+    display: inline-block;
+    vertical-align:top;
+    padding-right: 14px;
+    padding-top: 17px;
+}
+.cierralo-grey-text{
+	color: #625e63;
+}
+.cierralo-orange-text{
+	color: #e66700;
+}
+.cierralo-purplish-grey{
+	color: #757176;
+}
+.letter-spacing-dot-six{
+	letter-spacing: 0.6px;
+}
+.letter-spacing-dot-four{
+	letter-spacing: 0.4px;
+}
+.user-title-center{
+	font-size: 25px;
+	line-height: 56px;
+	margin: 0;
+}
+.user-title-container{
+	padding-top: 34px;
+	padding-bottom: 34px;
+}
+.user-photo-container{
+	display: inline-block;
+}
+.user-info-container{
+	display: inline-block;
+	padding-left: 30px;
+	vertical-align:top;
+}
+.user-seller-photo{
+	width: 133px;
+	height: auto;
+	margin-left: 20px;
+}
+.user-header-info{
+	width: 60%;
+	padding: 30px;
+	padding-left: 20%;
+}
+.user-seller-name{
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: 0.6px;
+}
+.user-seller-membership{
+	margin: 0px;
+	margin-top: 6px;
+	font-size: 10px;
+	letter-spacing: 0.6px;
+}
+.stars-container{
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+.rate-star{
+	font-size: 11px !important;
+	color: #f7c42a;
+}
+.cierralo-contact-btn {
+    width: 118px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    margin:0;
+    padding: 11px 23px;
+}
+.buildings-title-container{
+	padding-top: 54px;
+	padding-bottom: 35px;
+}
+
+.buildings-title-center{
+	font-size: 18px;
+	line-height: 56px;
+	margin: 0;
+}
+.building-container{
+	width: 55%;
+	margin-bottom: 23px;
+}
+.building-photo-container{
+	display: inline-block;
+}
+.building-info-container{
+	display: inline-block;
+	//border: solid 1px #e5e5e5;
+	-webkit-box-shadow:inset 0px 0px 0px 1px #e5e5e5;
+    -moz-box-shadow:inset 0px 0px 0px 1px #e5e5e5;
+    box-shadow:inset 0px 0px 0px 1px #e5e5e5;
+	vertical-align:top;
+	height: 195px;
+	margin: 0px;
+	width: 147px;
+	margin-left: -5px;
+	padding: 0px 24px;
+}
+.building-photo-rectangle{
+	width: 334px;
+	height: 195px;
+}
+.building-street-name{
+	font-size: 20px;
+	margin: 0;
+	padding-top: 34px;
+}
+.building-location{
+	font-size: 15px;
+	margin: 0;
+	padding-top: 6px;
+	padding-bottom: 13px;
+}
+.building-divider {
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+    width: 80px;
+    margin-bottom: 13px;
+}
+.building-cost{
+	font-size: 17px;
+	margin: 0;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+.cierralo-building-more-btn {
+    width: 79px;
+    height: 22.8px;
+    border-radius: 100px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    margin:0;
+    letter-spacing: 0.5px;
+    padding: 6px 5px;
+}
+.cierralo-pre-footer-divider {
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #f5f5f5;
+    margin: 25% auto; /* 15% from the top and centered */
+    padding: 0px;
+    padding-top: 20px;
+    width: 400px; /* Could be more or less, depending on screen size */
+    position: relative;
+}
+.modal-close-btn-container{
+	position: absolute;
+	right: -30px;
+	top: -50px;
+}
+/* The Close Button */
+.close {
+    color: #f5f5f5;
+    float: right;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.close:hover,
+.close:focus {
+    color: #f5f5f5;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header{
+	padding-bottom: 20px;
+}
+.modal-title{
+	font-size: 25px;
+	letter-spacing: 0.3px;
+	margin: 0;
+	padding-top: 30px;
+}
+.cierralo-contact-modal-divider {
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+    width: 80%;
+    margin-bottom: 24px;
+}
+.modal-body{
+	padding-bottom: 83px;
+}
+.user-seller-photo-modal{
+	width: 73px;
+	height: auto;
+	margin-left: 25px;
+}
+.modal-owner-text{
+	font-size: 13px;
+	margin: 0;
+	padding-top: 19px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+.modal-name-text{
+	margin: 0;
+	font-size: 17px;
+}
+.modal-footer{
+	background-color: #e66700;
+	text-align: center;
+	padding-top: 34px;
+	padding-bottom: 31px;
+	width: 100%;
+	position: relative;
+}
+.modal-icon-phone{
+	width: 57px;
+	height: 56px;
+	padding-right: 8px;
+}
+.modal-icon-mail{
+	width: 57px;
+	height: 56px;
+	padding-left: 8px;
+}
+.modal-arrow-down{
+	width: 0; 
+	height: 0; 
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+
+	border-top: 14px solid #f5f5f5;
+	position: absolute;
+	top: 0;
+    left: 50%;
+    margin-left: -14px;
+}
+.profile-margin-btn{
+	margin-top: 50px;
+}
