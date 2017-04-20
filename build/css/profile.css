@@ -191,7 +191,7 @@
 .modal-close-btn-container{
 	position: absolute;
 	right: -30px;
-	top: -50px;
+	top: -40px;
 }
 /* The Close Button */
 .close {
@@ -273,4 +273,8 @@
 }
 .profile-margin-btn{
 	margin-top: 50px;
+}
+.close-modal-img{
+	width: 21px;
+	height: 21px;
 }
