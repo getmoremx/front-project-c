@@ -57,9 +57,9 @@
 	margin-left: 20px;
 }
 .user-header-info{
-	width: 60%;
+	margin:auto;
 	padding: 30px;
-	padding-left: 20%;
+	
 }
 .user-seller-name{
 	margin: 0;
@@ -85,7 +85,7 @@
     height: 39px;
     border-radius: 100px;
     border: none;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     margin:0;
     padding: 11px 23px;
@@ -101,7 +101,7 @@
 	margin: 0;
 }
 .building-container{
-	width: 55%;
+	margin: auto;
 	margin-bottom: 23px;
 }
 .building-photo-container{
@@ -156,7 +156,7 @@
     color: white;
     margin:0;
     letter-spacing: 0.5px;
-    padding: 6px 5px;
+    padding: 5px 5px;
 }
 .cierralo-pre-footer-divider {
     border-bottom: 1px solid #e5e5e5;
