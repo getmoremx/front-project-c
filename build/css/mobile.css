@@ -253,4 +253,15 @@
         float: right;
         margin-right: 20px !important;
     }
+    .modal-body {
+        padding-bottom: 50px !important;
+    }
+    .modal-close-btn-container {
+        position: absolute !important;
+        right: 0px !important;
+        top: -25px !important;
+    }
+    .modal-content{
+        width: 90% !important;
+    }
 }
