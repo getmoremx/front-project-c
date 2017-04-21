@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {% block meta %}{% endblock %}
     {% block extra_css %}{% endblock %}
-    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/application.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/application.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!--Profile css file-->
+    <link rel="stylesheet" href="./css/profile.css">
+    <!--FontAwesome css file-->
+    <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
   </head>
   <body>
@@ -26,10 +30,11 @@
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.libs.js"></script>
+    <script src="./js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.js"></script>
+    <script src="./js/profile.js"></script>
+    <script src="./js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
     {% endblock %}
   </body>
