@@ -206,9 +206,15 @@
         width: 100% !important;
         justify-content: space-between;
     }
+    .user-photo-container{
+        display: block !important;
+    }
     .user-info-container {
-        padding-left: 0px;
+        padding-left: 0px !important;
         vertical-align: top;
+    }
+    .user-seller-photo{
+        margin-left: 0px !important;
     }
     .user-header-info {
         text-align: center;
