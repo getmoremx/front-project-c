@@ -37,8 +37,12 @@
         width: 120px;
         margin:0 auto;
     }
-
-
+    .web-area{
+        display: none;
+    }
+    .mobile-alert-container{
+        display: flex !important;
+    }
 }
 @media only screen and (max-width: 767px) {
     .hamburger {
@@ -269,5 +273,11 @@
     }
     .modal-content{
         width: 90% !important;
+    }
+    .web-area{
+        display: none;
+    }
+    .mobile-alert-container{
+        display: flex !important;
     }
 }
