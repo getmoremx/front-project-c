@@ -7,25 +7,40 @@ var closeItBtn = document.getElementById("closeItButton");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
+var body = document.getElementById('body');
 // When the user clicks on the button, open the modal 
 offerBtn.onclick = function() {
-    alertModal.style.display = "block";
+	alertModal.classList.add('modal-open');
+	console.log(body);
+	body.classList.add('modal-open');
 }
 closeItBtn.onclick = function() {
-    alertModal.style.display = "block";
+	alertModal.classList.add('modal-open');
+	body.classList.add('modal-open');
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    alertModal.style.display = "none";
+	alertModal.classList.remove('modal-open');
+	body.classList.remove('modal-open');
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+	if (event.target == modal) {
+		alertModal.classList.remove('modal-open');
+		body.classList.remove('modal-open');
+	}
+}
+function focusOnInput() {
+	var element = document.getElementById('offerPercentage');
+	console.log('element');
+	element.focus();
+	element.selectionStart = element.selectionEnd = element.value.length;
+	setTimeout(function () { element.focus(); }, 1);
+}
+window.onload = function() {
+	focusOnInput();
 }
 function removeHidden() {
 	var hiddens = document.getElementsByClassName("hidden");
@@ -70,7 +85,7 @@ document.getElementById('withGrey').addEventListener('click', function () {
 		document.getElementById('hook-with').classList.add('hidden');
 		document.getElementById('hook-container-without').classList.add('hidden');
 		document.getElementById('date-with').classList.add('hidden');
-		document.getElementById('delivery-grey-without').classList.add('hidden');
+		document.getElementById('delivery-with').classList.add('hidden');
 	}
 });
 document.getElementById('withoutGrey').addEventListener('click', function () {
