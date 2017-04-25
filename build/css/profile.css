@@ -21,10 +21,10 @@
 	display: inline-block;
 }
 .cierralo-grey-text{
-	color: #625e63;
+	color: #757176;
 }
 .cierralo-orange-text{
-	color: #e66700;
+	color: #E4671E;
 }
 .cierralo-purplish-grey{
 	color: #757176;
@@ -148,6 +148,7 @@
 	color: white;
 	margin: 0 10px;
 	padding: 11px 23px;
+	margin-top: 50px;
 }
 .cierralo-building-more-btn {
 	width: 79px;
@@ -171,7 +172,7 @@
 .modal{
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 9999;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -275,4 +276,13 @@
 .close-modal-img{
 	width: 24px;
 	height: 21px;
+}
+.cursor-pointer:hover{
+	cursor: pointer;
+}
+.modal-open{
+	display: block !important;
+}
+#body.modal-open {
+	overflow: hidden;
 }
