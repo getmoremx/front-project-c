@@ -23,7 +23,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title> - front project c</title>
   </head>
-  <body>
+  <body id="body">
     <div id="page">
       <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
     <span class="hamburger-box">
@@ -42,7 +42,7 @@
             <li class="padding-top-20"><a href="#">¿Cómo funciona?</a></li>
             <li class="padding-top-20"><a href="#">Contacto</a></li>
             <li class="padding-top-20"><div class="navbar-divider"></div></li>
-            <li><a href="/login/auth"><p class="navbar-user-info inline-block">Carlos</p> <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block"></a></li>
+            <li><a href="/profile.html"><p class="navbar-user-info inline-block">Carlos</p> <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block"></a></li>
         </ul>
         <div hidden="" class="cierralo-show-in-movil">
             <a class="cierralo-center-flex" href="/">
@@ -60,7 +60,7 @@
 			<div class="modal-close-btn-container">
 				<span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
 			</div>
-			<div class="arrow-check-circle cierralo-flex-row">
+			<div class="arrow-check-circle cierralo-flex-row cursor-pointer">
 				<img src="./img/icons/shape@3x.png" alt="" class="arrow-check-icon">
 			</div>
 			<div class="alert-modal-body">
@@ -76,7 +76,7 @@
 		<div class="user-title-container">
 			<h1 class="user-title-center cierralo-grey-text cierralo-font-helveltica-medium">Realizar oferta</h1>
 		</div>
-		<div class="cierralo-footer-divider cierralo-flex-row">
+		<div class="cierralo-top-divider cierralo-flex-row">
 
 		</div>
 		<div class="building-offer-description cierralo-flex-row">
@@ -128,8 +128,8 @@
 						<p class="seller-user-name cierralo-font-helveltica-bold letter-spacing-dot-six cierralo-orange-text">José Martínez</p>
 					</div>
 				</div>
-				<h1 class="building-street-name cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-medium">Colima 228</h1>
-				<p class="building-street-place cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-purplish-grey">Roma Norte</p>
+				<h1 class="building-offer-street-name cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-medium">Colima 228</h1>
+				<p class="building-offer-street-place cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-purplish-grey">Roma Norte</p>
 				<div class="building-information-divider">
 					
 				</div>
@@ -146,13 +146,13 @@
 					</div>
 					<p class="terms-subtitle cierralo-grey-text cierralo-font-helveltica-medium">Estructura de venta de la propiedad </p>
 					<p class="terms-tiny-text cierralo-purple-grey cierralo-font-helveltica-neue-light">Si deseas saber más de la estructura
-	de la propiedad <a href="#" class="terms-link-text cierralo-purple-grey">haz click aquí</a></p>
+	de la propiedad <a href="#" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
 					<div class="terms-options-container cierralo-flex-row">
-						<div class="cierralo-flex-colum with-domain-box active" id="withGrey">
+						<div class="cierralo-flex-colum with-domain-box active cursor-pointer" id="withGrey">
 							<p class="with-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">CON</p>
 							<p class="with-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
 						</div>
-						<div class="cierralo-flex-colum without-domain-box" id="withoutGrey">
+						<div class="cierralo-flex-colum without-domain-box cursor-pointer" id="withoutGrey">
 							<p class="without-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">SIN</p>
 							<p class="without-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
 						</div>
@@ -184,7 +184,7 @@
 						</div>
 						<p class="delivery-date-value cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">28 / 06 / 17</p>
 					</div>
-					<button class="cierralo-font-helveltica-neue-light cierralo-close-it-btn cierralo-btn-secondary cierralo-remove-margin" id="closeItButton">Ciérralo!</button>
+					<button class="cierralo-font-helveltica-neue-light cierralo-close-it-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer" id="closeItButton">Ciérralo!</button>
 				</div>
 			</div>
 			<div class="white-section-right-half">
@@ -196,13 +196,13 @@
 					</div>
 					<p class="offer-subtitle cierralo-grey-text cierralo-font-helveltica-medium">Selecciona el tipo de estructura que deseas para tu oferta </p>
 					<p class="offer-tiny-text cierralo-purple-grey cierralo-font-helveltica-neue-light">Si deseas saber más de la estructura
-	de la propiedad <a href="#" class="terms-link-text cierralo-purple-grey">haz click aquí</a></p>
-					<div class="terms-options-container cierralo-flex-row">
-						<div class="cierralo-flex-colum with-domain-box active" id="withWhite">
+	de la propiedad <a href="#" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
+					<div class="terms-options-offer-container cierralo-flex-row">
+						<div class="cierralo-flex-colum with-domain-box active cursor-pointer" id="withWhite">
 							<p class="with-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">CON</p>
 							<p class="with-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
 						</div>
-						<div class="cierralo-flex-colum without-domain-box" id="withoutWhite">
+						<div class="cierralo-flex-colum without-domain-box cursor-pointer" id="withoutWhite">
 							<p class="without-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">SIN</p>
 							<p class="without-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
 						</div>
@@ -212,7 +212,7 @@
 							
 						</div>
 						<div class="hook-offer-value-container inline-block" id="hook-container-without">
-							<input type="text" name="" value="20%" placeholder="" class="offer-percentage cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+							<input type="text" name="" value="20%" placeholder="" id="offerPercentage" class="offer-percentage make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
 						</div>
 						<p class="hook-offer-value cierralo-white-grey letter-spacing-dot-one cierralo-font-helveltica-medium inline-block hidden" id="hook-value-without">" 0% "</p>
 					</div>
@@ -220,27 +220,31 @@
 						<div class="sign-date-offer-divider inline-block">
 							
 						</div>
-						<p class="sign-date-value cierralo-white-grey letter-spacing-dot-one cierralo-font-helveltica-medium inline-block" id="date-with">28 / 06 / 17</p>
+						<div class="sign-date-value-container hook-offer-value-container inline-block" id="date-with">
+							<input type="text" name="" value="28 / 06 / 17" placeholder="" class="make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+						</div>
 						<div class="sign-date-input-container inline-block hidden" id="date-without">
-							<input type="text" name="" value="28 / 06 / 17" placeholder="" class="offer-percentage cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+							<input type="text" name="" value="28 / 06 / 17" placeholder="" class="offer-percentage make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
 						</div>
 					</div>
 					<div class="delivery-date-offer-container" id="delivery-container-without">
 						<div class="sign-date-offer-divider inline-block">
 							
 						</div>
-						<p class="delivery-date-value cierralo-white-grey letter-spacing-dot-one cierralo-font-helveltica-medium inline-block" id="delivery-with">28 / 06 / 17</p>
+						<div class="delivery-date-value-container hook-offer-value-container inline-block" id="delivery-with">
+							<input type="text" name="" value="28 / 06 / 17" placeholder="" class="offer-percentage make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+						</div>
 						<p class="delivery-date-value cierralo-white-grey letter-spacing-dot-one cierralo-font-helveltica-medium inline-block hidden" id="delivery-without">" 28 / 06 / 17 "</p>
 					</div>
 					<div class="accept-terms-container cierralo-flex-row" id="terms-container">
 						<input type="checkbox" name="accept" value="" class="terms-checkbox inline-block">
-						<p class="accept-text cierralo-purple-grey cierralo-font-helveltica-neue-light inline-block">Acepto los <a href="" class="terms-link-text cierralo-purple-grey">terminos y condiciones </a>de la oferta de ciérralo</p>
+						<p class="accept-text cierralo-purple-grey cierralo-font-helveltica-neue-light inline-block">Acepto los <a href="" class="terms-link-text cierralo-purple-grey cursor-pointer">terminos y condiciones </a>de la oferta de ciérralo</p>
 					</div>
-					<button class="cierralo-font-helveltica-neue-light cierralo-offer-btn cierralo-btn-secondary cierralo-remove-margin" id="offerButton">Ofertar</button>
+					<button class="cierralo-font-helveltica-neue-light cierralo-offer-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer" id="offerButton">Ofertar</button>
 				</div>
 			</div>
 		</div>
-		<div class="cierralo-pre-footer-divider cierralo-flex-row">
+		<div class="cierralo-offer-template-divider cierralo-flex-row">
 		</div>
 	</div>
 	<div class="mobile-alert-container cierralo-flex-colum">
