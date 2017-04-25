@@ -1,0 +1,621 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require fonts
+*= require footer
+*= require header
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+.hamburger {
+    padding: 0px;
+    display: none;
+}
+.hamburger:active {
+    outline: none;
+}
+.hamburger:focus {
+    outline: none;
+}
+.hamburger-box {
+    width: 30px;
+}
+.hamburger-inner {
+    width: 30px;
+    height: 3px;
+    background-color: #ff9a00;
+}
+.hamburger-inner::after {
+    top: -14px !important;
+    width: 30px;
+    height: 3px;
+    background-color: #ff9a00;
+}
+.hamburger-inner::before {
+    top: -7px;
+    width: 30px;
+    height: 3px;
+    background-color: #ff9a00;
+}
+.add-background {
+    background: url(background/cierralo-n-e-wfinal-01.png);
+    background-size: 100%;
+}
+.add-background-white {
+    background: white;
+}
+.cierralo-navbar {
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    top:0;
+    background: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+section {
+    width:100%;
+}
+.mainLogo {
+    width: 83px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.cierralo-aling-end {
+    align-items: flex-end;
+}
+.cierralo-strong-font {
+    font-family: 'HelveticaNeue-bold';
+}
+.cierralo-flex-colum {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.cierralo-primary-color {
+    color: #e66700;
+}
+.cierralo-broken-color {
+    color: #AAAAAA;
+}
+.cierralo-button-header > a:hover {
+    color: #ffffff;
+    font-family: 'HelveticaNeue-Medium';
+}
+.cierralo-default-btn {
+    width: 128px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    margin:0 10px;
+    padding: 11px 23px;
+    text-decoration: none;
+}
+.cierralo-default-btn:focus {
+    outline:none;
+}
+.cierralo-buttons-container {
+    margin-top: 26px;
+}
+.cierralo-btn-secondary {
+    background-color: #e66700;
+    color: white;
+    font-size:14px;
+}
+
+.cierralo-btn-primary {
+    background-color: #f7971c;
+}
+.cierralo-button-header > a {
+    color: #ffffff;
+}
+.cierralo-button-header {
+    background: #e66700;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    padding: 5px 19px !important;
+}
+
+.cierralo-flex-row {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.cierralo-text-center {
+    text-align: center;
+}
+
+.stronger {
+    font-weight: bold;
+}
+.border {
+    border: 2px solid white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 7px;
+    padding-left: 10px ;
+    padding-right: 10px !important;
+}
+.navbar {
+    min-height: 76px !important;
+}
+.brand {
+    font-family: 'PT Sans', sans-serif;
+}
+span.mainLogo {
+    font-size: 25pt;
+    font-weight: bold;
+}
+span.textLogo {
+    font-size: 12pt;
+    letter-spacing: 6px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -25px;
+}
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-top {
+    max-width: 50%;
+    width: 45px;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 25pt;
+    margin-top: 60px;
+}
+.square {
+    border: 1px solid black;
+    width: 50%;
+}
+.form-sketch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noLeftPadding {
+    width: 150px !important;
+    background: white;
+    color: white;
+    border: none;
+}
+.label {
+    color: #4a4a4a;
+}
+.size {
+    width: 500px;
+}
+.subtitle {
+    color: #aaaaaa;
+    font-size: 12pt;
+    padding: 5px;
+}
+.vertical {
+    flex-direction: column;
+}
+.logoFb {
+    width: 20px;
+    margin-right: 18px;
+}
+.buttonFB {
+    background: #3a5998;
+    color: white;
+}
+.buttonG {
+    background: white;
+    border: 1px solid #e5e5e5;
+    color: #9b9b9b;
+}
+.button {
+    padding: 12px;
+    margin: 4px;
+    font-size: 13pt;
+    text-decoration: none;
+    padding-left: 20px;
+    width: 260px;
+}
+.text-brand {
+    font-family: 'Nunito', sans-serif;
+}
+.navbar-default a{
+    font-size: 14px !important
+}
+.border > a {
+    padding: 5px !important;
+}
+.navbar-default, .navbar-static-top {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-color: white;
+    color: #9b9b9b;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:15px;
+    text-align: left;
+    line-height: 1.7;
+    padding: 1em;
+}
+.footer-square {
+    width: 300px;
+}
+
+.change-width {
+    width: 225px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+.marginTop {
+    margin-top: -13px;
+}
+.marginMoreTop {
+    margin-top: -10px;
+}
+.margin-top-3 {
+    margin-top: -5px;
+}
+.end {
+    align-items: flex-end !important;
+}
+.footer-font-left {
+    font-size: 10pt;
+    text-align: left;
+}
+.footer-font-right {
+    font-size: 15px;
+    text-align: right;
+}
+.fotter-font-middle-bottom {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.navbar-brand {
+    text-decoration: none;
+    margin-left: 84px;
+}
+.middle-width {
+    width: 400px;
+}
+
+.cierralo-max-width {
+    width:100%;
+    justify-content: space-between !important;
+}
+
+.cierralo-no-center {
+    align-items:baseline !important;
+}
+.cierralo-row-one {
+    margin-bottom: 30px;
+    margin-left: 140px;
+    align-items: flex-start !important;
+    margin-top: 41px;
+}
+.cierralo-phone {
+    text-decoration: none;
+    color: #9b9b9b;
+}
+.cierralo-footer-divider {
+    border-bottom:1px solid #e5e5e5;
+    height:1px;
+    width:80%;
+    margin-bottom:28px;
+}
+.cierralo-footer-last-text {
+    width: 30%;
+    justify-content: space-between;
+}
+.cierralo-footer-list {
+    list-style: none;
+}
+.cierralo-remove-margin {
+    margin-top: 10px;
+}
+.cierralo-add-padding-left {
+    padding-left:9px;
+}
+.fitLogo {
+    width: 193px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+.cierralo-title {
+    font-size:25px;
+    padding: 1.3rem 0px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #625e63;
+}
+.cierralo-default-section, .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cierralo-default-divider {
+    width: 10rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 2rem;
+}
+.cierralo-building-feature {
+    width: 268px;
+    position: relative;
+    height: 230px;
+    margin: 11.25px;
+    background-size: contain !important;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    align-items: flex-end;
+    text-align: center;
+}
+.cierralo-inner-container {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    background: white;
+}
+.cierralo-all-building-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction:row;
+    width: 90%;
+}
+.cierralo-all-building-container > div {
+    margin: 0px 1.5rem;
+}
+.cierralo-filter-buildings {
+    width: 170px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #6f6c70;
+}
+.cierralo-all-buildings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 590px;
+}
+.cierralo-all-face, .cierralo-all-fav {
+    position: absolute;
+}
+.cierralo-all-fav {
+    right: 1rem;
+    bottom: 45px;
+}
+.cierralo-all-face {
+    left: 1.5rem;
+    font-size:12px;
+    color:#6c6c6c;
+    bottom: 35px;
+}
+.cierralo-face-rounder {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain !important;
+    border-radius: 50%;
+    bottom: 16px;
+    left: -5px;
+}
+.cierralo-all-price {
+    position: absolute;
+    top:12px;
+    line-height: 1.4rem;
+    width: 60px;
+    height: 22.6px;
+    background-color: #e5e5e5;
+    right: 0;
+    color: #6b6b6b;
+    font-size: 12px;
+}
+.cierralo-all-title {
+    font-size: 18px;
+    color:#6c6c6c;
+}
+.cierralo-all-subtitle {
+    font-size:14px;
+    color:#6c6c6c;
+    margin-bottom: 0.5rem;
+}
+.cierralo-all-features {
+    font-size: 11px;
+    color: #6b6b6b;
+}
+.cierralo-filter-divider {
+    width:154px;
+    height:1px;
+    border-bottom: solid 1px #e5e5e5;
+    margin-top:3px;
+}
+.cierralo-price-range {
+    width:100%;
+}
+.cierralo-municipality {
+    width: 109px;
+    height: 24px;
+    border: solid 1px #d8d8d8;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    margin: 15px 0px;
+}
+.cierralo-default-link {
+    text-decoration: none;
+}
+#map {
+    width: 500px;
+    height: 300px;
+}
+
+.cierralo-map-and-features {
+    display: flex;
+    flex-direction: row;
+}
+.cierralo-only-description {
+    width:50%;
+}
+.cierralo-slick {
+    width: 78%;
+    height: 428px;
+    background-size: contain !important;
+}
+.cierralo-slick-items {
+    display: flex;
+}
+.cierralo-square {
+    width: 47px;
+    height:47px;
+    background-size: cover !important;
+}
+.cierralo-building-description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cierralo-detail-face {
+    width: 149px;
+    height: 149px;
+    background-size: cover !important;
+    border-radius: 50%;
+}
+.cierralo-building-description > div {
+    margin:64px;
+}
+.cierralo-left-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 149px;
+}
+.cierralo-right-description {
+    width: 400px;
+}
+.cierralo-title-details {
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #757176;
+}
+.detail-container {
+    display: flex;
+    align-items: center;
+}
+.detail-container > div:nth-child(2) {
+    margin: 0px 3rem;
+}
+.cierralo-third-title {
+    font-size: 19px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #757176;
+}
+.detail-divider {
+    width: 231px;
+    height: 3px;
+    border-bottom: solid 1px #e5e5e5;
+    margin: 0.3rem 0px;
+}
+.cierralo-detail-price {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #e66700;
+}
+
+.cierralo-street-detail {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #bababa;
+    margin: 1.5rem 0px;
+}
+.cierralo-detail-buttons {
+    margin-left: -10px;
+}
+.detail-heart {
+    width: 25px;
+}
+.cierralo-detail-label {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #625e63;
+}
+.cierralo-detail-seller {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #b4b4b4;
+}
+.cierralo-detail-link {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #e66700;
+}
+.cierralo-left-description > div:nth-child(1) {
+    margin: 2rem 0px;
+}
