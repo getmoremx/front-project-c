@@ -16,8 +16,14 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
+    <!--All building list css file-->
+    <link rel="stylesheet" href="./css/buildingList.css">
+    <!--Building details css file-->
+    <link rel="stylesheet" href="./css/buildingDetail.css">
     <!--Make offer css file-->
     <link rel="stylesheet" href="./css/makeOffer.css">
+    <!--Login css file-->
+    <link rel="stylesheet" href="./css/login.css">
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -25,24 +31,35 @@
   </head>
   <body id="body">
     <div id="page">
-      <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+        
+            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
     <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span>
 </button>
 <nav id="navigation" class="cierralo-navbar">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="./">
         <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
     </a>
     <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
 
 
-        <ul class="nav navbar-nav">
-            <li class="padding-top-20"><a href="#">Departamentos</a></li>
-            <li class="padding-top-20"><a href="#">¿Cómo funciona?</a></li>
-            <li class="padding-top-20"><a href="#">Contacto</a></li>
-            <li class="padding-top-20"><div class="navbar-divider"></div></li>
-            <li><a href="/profile.html"><p class="navbar-user-info inline-block">Carlos</p> <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block"></a></li>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="cierralo-font-helveltica-neue"><a href="./buildingList.html">Departamentos</a></li>
+            <li class="cierralo-font-helveltica-neue"><a href="#">Cómo funciona</a></li>
+            <li class="cierralo-font-helveltica-neue"><a href="/login/auth">Inicia sesión</a></li>
+            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
+                <a href="/login/auth" class="no-padding-top">
+                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
+                </a>
+            </li>
+            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
+                <a href="/login/auth" class="no-padding-top">
+                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
+                </a>
+            </li>
+            <li class="cierralo-font-helveltica-neue no-margin-right"><a href="/login/auth"><img src="./img/icons/page-1-copy-5@3x.png" class="navbar-phone-icon"></a></a></li>
+            <li class="cierralo-font-helveltica-neue no-margin-right"><a href="/login/auth"><img src="./img/icons/page-1-copy-4@3x.png" class="navbar-phone-icon"></a></a></li>
         </ul>
         <div hidden="" class="cierralo-show-in-movil">
             <a class="cierralo-center-flex" href="/">
@@ -51,11 +68,276 @@
         </div>
     </ul>
 </nav>
-
-      <main id="main">
         
+        <main id="main" class="web-area">
+            
+<div id="content" role="main" class="cierralo-content">
+            <section>
+                <div class="cierralo-content">
 
-      </main>
+
+                    <div class="cierralo-principal-comparative">
+                        <div>
+                            <img src="./img/logo/cierralo-logo-02.png" class="cierralo-logo-comparative">
+                        </div>
+                        <div class="cierralo-flex-colum cierralo-padding-top-fourteen">
+                            <p class="cierralo-main-title cierralo-font-helveltica-medium">Vende o compra propiedades </p>
+                            <p class="cierralo-sub-main-title cierralo-font-helveltica-neue">¡Sin comisión de corredores!</p>
+                            <div class="cierralo-main-divider"></div>
+                        </div>
+                        <div class="cierralo-flex-row cierralo-aling-end cierralo-more-top">
+                            <div class="cierralo-left-container cierralo-text-center cierralo-adjust">
+                                <img src="./img/icons/broker-tachada-01@3x.png" class="cierralo-broken">
+                                <p><span class="cierralo-strong-font">Adiós</span> a los <span class="cierralo-strong-font">corredores</span> de inmuebles</p>
+                            </div>
+                            <div class="cierralo-right-container cierralo-text-center cierralo-adjust">
+                                <img src="./img/icons/hands-03@3x.png" class="cierralo-hands">
+                                <p class="cierralo-adjust-hands">Te llevamos de la mano para <span class="cierralo-strong-font">lograr la compra - venta</span></p>
+                            </div>
+                        </div>
+                        <div class="search-bar-container">
+                            <div class="search-icon-box">
+                                <img src="./img/icons/group-5@3x.png" alt="" class="search-icon-bar">
+                            </div>
+                            <input type="text" name="" value="" placeholder="Buscar por delegación" class="search-bar-input inline-block cierralo-font-helveltica-neue">
+                            <button type="" class="search-bar-button inline-block cierralo-font-helveltica-bold">Buscar</button>
+                        </div>
+                        <div class="or-divider-container">
+                            <div class="or-line-divider inline-block">
+                                
+                            </div>
+                            <div class="or-box inline-block">
+                                <p class="or-text cierralo-font-helveltica-neue cierralo-broken-color">o</p>
+                            </div>
+                            <div class="or-line-divider inline-block">
+                                
+                            </div>
+                        </div>
+                        <button class="cierralo-font-helveltica-neue cierralo-post-header-btn cierralo-btn-secondary cursor-pointer" id="postButton">Publica tu departamento</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="cierralo-principal-main-comparative">
+                    <div class="cierralo-principal-main-comparative-title">
+                        ¿Cómo funciona?
+                    </div>
+                    <div class="cierralo-table-comparative">
+                        <div class="cierralo-flex-row cierralo-table-header cierralo-center-comparative-row">
+                            <div class="cierralo-visual-width">
+                            </div>
+                            <div class="cierralo-container-of-comparative-icon">
+                                <img src="./img/logo/cierralo-logo-02.png" class="cierralo-logo-comparative">
+                            </div>
+                            <div class="cierralo-vs-icon cierralo-font-helveltica-medium">
+                                VS.
+                            </div>
+                            <div>
+                                <img src="./img/icons/broker-tachada-01@3x.png" class="cierralo-broken-comparative">
+                            </div>
+                        </div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom">
+                            <div class="cierralo-visual-width-two">
+                            </div>
+                            <div class="cierralo-remove-margin-images cierralo-font-helveltica-neue-light cierralo-main-table-row cierralo-primary-color cierralo-font-size cierralo-movil-only-width">
+                                Costo fijo
+                            </div>
+                            <div class="cierralo-remove-margin-images cierralo-font-helveltica-neue-light cierralo-movil-adjust-width cierralo-main-table-row-two cierralo-broken-color cierralo-font-size">
+                                Comisión del 3% al 5%
+                            </div>
+                        </div>
+                        <div class="cierralo-comparative-divider cierralo-hide-in-movil"></div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                                <p>Conoce</p>
+                                <img src="./img/icons/cierralo-iconos-a-02@3x.png" class="cierralo-table-one">
+                            </div>
+                            <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Conoce y controla todos los pasos del proceso de compra o venta de tu propiedad
+                            </div>
+                            <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Carecen de experiencia profesional y estructura de un proceso de compra-venta
+                            </div>
+                            <div hidden="" class="cierralo-show-in-movil cierralo-align-left">
+                                <div class="cierralo-flex-row">
+                                    <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Conoce y controla todos los pasos del proceso de compra o venta de tu propiedad
+                                    </div>
+                                    <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Carecen de experiencia profesional y estructura de un proceso de compra-venta
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cierralo-comparative-divider"></div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column cierralo-movil-change-column">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                                <p>Determina</p>
+                                <img src="./img/icons/cierralo-iconos-a-03@3x.png" class="cierralo-table-two">
+                            </div>
+                            <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Determina el precio de tu propiedad con ayuda de nuestros análisis de mercado cuantitativos
+                            </div>
+                            <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Su determinación de precio no cuenta con sustento y existe un conflicto te interés por determinar un precio bajo con el fin de vender tu propiedad
+                            </div>
+                            <div hidden="" class="cierralo-show-in-movil cierralo-align-left">
+                                <div class="cierralo-flex-row">
+                                    <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Determina el precio de tu propiedad con ayuda de nuestros análisis de mercado cuantitativos
+                                    </div>
+                                    <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Su determinación de precio no cuenta con sustento y existe un conflicto te interés por determinar un precio bajo con el fin de vender tu propiedad
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cierralo-comparative-divider"></div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                                <p>Publica</p>
+                                <img src="./img/icons/cierralo-iconos-a-04@3x.png" class="cierralo-table-three">
+                            </div>
+                            <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Publica tu propiedad en Ciérralo! y accede a nuestra comunidad de compradores
+                            </div>
+                            <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Publican tu propiedad de forma convencional y no dan prioridad a tu inmueble
+                            </div>
+                            <div hidden="" class="cierralo-show-in-movil cierralo-align-left">
+                                <div class="cierralo-flex-row">
+                                    <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Publica tu propiedad en Ciérralo! y accede a nuestra comunidad de compradores
+                                    </div>
+                                    <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Publican tu propiedad de forma convencional y no dan prioridad a tu inmueble
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cierralo-comparative-divider"></div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                                <p>Posiciona</p>
+                                <img src="./img/icons/cierralo-iconos-a-05@3x.png" class="cierralo-table-four">
+                            </div>
+                            <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Posiciona tu propiedad con fotografías de nuestros profesionales y con nuestros tips de venta
+                            </div>
+                            <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Desconocen las mejores prácticas para posicionar una propiedad exitosamente
+                            </div>
+                            <div hidden="" class="cierralo-show-in-movil cierralo-align-left">
+                                <div class="cierralo-flex-row">
+                                    <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Posiciona tu propiedad con fotografías de nuestros profesionales y con nuestros tips de venta
+                                    </div>
+                                    <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Desconocen las mejores prácticas para posicionar una propiedad exitosamente
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cierralo-comparative-divider"></div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                                <p>Oferta</p>
+                                <img src="./img/icons/cierralo-iconos-a-06@3x.png" class="cierralo-table-five">
+                            </div>
+                            <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Recibe o realiza una oferta con trato directo y comienza el trámite en el cual te llevamos de la mano paso a paso
+                            </div>
+                            <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Un intermediario que no agrega valor en la negociación ni tiene un proceso estandarizado para llevar una compra-venta
+                            </div>
+                            <div hidden="" class="cierralo-show-in-movil cierralo-align-left">
+                                <div class="cierralo-flex-row">
+                                    <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Recibe o realiza una oferta con trato directo y comienza el trámite en el cual te llevamos de la mano paso a paso
+                                    </div>
+                                    <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Un intermediario que no agrega valor en la negociación ni tiene un proceso estandarizado para llevar una compra-venta
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cierralo-comparative-divider"></div>
+                        <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                                <p>Ciérralo</p>
+                                <img src="./img/icons/cierralo-iconos-a-07@3x.png" class="cierralo-table-six">
+                            </div>
+                            <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Cierre del proceso con uno de nuestros notarios aliados
+                            </div>
+                            <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-hide-in-movil">
+                                Desaparecen cuando se acepta una oferta y aparecen por su comisión
+                            </div>
+                            <div hidden="" class="cierralo-show-in-movil cierralo-align-left">
+                                <div class="cierralo-flex-row">
+                                    <div class="cierralo-main-table-row cierralo-primary-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Cierre del proceso con uno de nuestros notarios aliados
+                                    </div>
+                                    <div class="cierralo-main-table-row-two cierralo-broken-color cierralo-font-helveltica-medium cierralo-movil-width">
+                                        Desaparecen cuando se acepta una oferta y aparecen por su comisión
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="cierralo-flex-colum landing-onsale-container">
+                    <div class="onsale-divider">
+                        
+                    </div>
+                    <div class="onsale-box cierralo-flex-colum">
+                        <p class="onsale-title cierralo-font-helveltica-neue cierralo-broken-color">Envíanos un anuncio de algún departamento que veas en venta</p>
+                        <p class="onsale-subtitle cierralo-font-helveltica-neue">¡Te depositaremos $50 MXN!</p>
+                        <button class="cierralo-font-helveltica-neue cierralo-onsale-btn cierralo-btn-secondary cursor-pointer" id="postButton">Más información</button>
+                    </div>
+                    <div class="onsale-divider">
+                        
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="cierralo-question-main cierralo-flex-row">
+                    <div class="cierralo-flex-colum">
+                        <p class="cierralo-secondary-title cierralo-font-helveltica-medium">¿Qué harías con el dinero ahorrado al evitar al <span class="cierralo-strong-font">corredor</span>?</p>
+                        <div class="cierralo-possible-safe-fee cierralo-flex-row cierralo-aling-end">
+                            <div class="cierralo-icon cierralo-font-helveltica-thin">
+                                <img src="./img/icons/build-icon.png" class="cierralo-invest-one">
+                                <p>Invertir</p>
+                            </div>
+                            <div class="cierralo-icon cierralo-font-helveltica-thin">
+                                <img src="./img/icons/travel-02@3x.png" class="cierralo-invest-two">
+                                <p>Viajar</p>
+                            </div>
+                            <div class="cierralo-icon cierralo-font-helveltica-thin">
+                                <img src="./img/icons/save-02@3x.png" class="cierralo-invest-three">
+                                <p>Ahorrar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cierralo-flex-row cierralo-last-img">
+                <div class="cierralo-last-container">
+                    <div class="cierralo-flex-colum">
+                        <p class="cierralo-last-title cierralo-font-helveltica-medium">¡Regístrate!</p>
+                        <div class="cierralo-buttons-container">
+                            <a class="cierralo-btn-primary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer">Vender</a>
+                            <a class="cierralo-btn-secondary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        </main>
+        
       <footer class="site-footer">
   <div class="footer cierralo-font-helveltica-thin" role="contentinfo">
         <div class="cierralo-main-footer cierralo-flex-colum">
@@ -80,7 +362,7 @@
                 </div>
                 <div class="cierralo-footer-right">
                     <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="/home/signUp"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin">Regístrate</button></a>
+                    <a href="/home/signUp"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
@@ -107,10 +389,9 @@
     <script src="./js/front_project_c.libs.js"></script>
     
     
-    <script src="./js/profile.js"></script>
-    <script src="./js/makeOffer.js"></script>
     <script src="./js/front_project_c.js"></script>
     
+        
     
   </body>
 </html>
