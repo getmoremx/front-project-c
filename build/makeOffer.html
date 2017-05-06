@@ -16,8 +16,14 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
+    <!--All building list css file-->
+    <link rel="stylesheet" href="./css/buildingList.css">
+    <!--Building details css file-->
+    <link rel="stylesheet" href="./css/buildingDetail.css">
     <!--Make offer css file-->
     <link rel="stylesheet" href="./css/makeOffer.css">
+    <!--Login css file-->
+    <link rel="stylesheet" href="./css/login.css">
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -25,24 +31,25 @@
   </head>
   <body id="body">
     <div id="page">
-      <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+        
+            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
     <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span>
 </button>
 <nav id="navigation" class="cierralo-navbar">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="./">
         <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
     </a>
     <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
 
 
         <ul class="nav navbar-nav">
-            <li class="padding-top-20"><a href="#">Departamentos</a></li>
+            <li class="padding-top-20"><a href="./buildingList.html">Departamentos</a></li>
             <li class="padding-top-20"><a href="#">¿Cómo funciona?</a></li>
             <li class="padding-top-20"><a href="#">Contacto</a></li>
             <li class="padding-top-20"><div class="navbar-divider"></div></li>
-            <li><a href="/profile.html"><p class="navbar-user-info inline-block">Carlos</p> <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block"></a></li>
+            <li><a href="./profile.html"><p class="navbar-user-info inline-block">Carlos</p> <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block"></a></li>
         </ul>
         <div hidden="" class="cierralo-show-in-movil">
             <a class="cierralo-center-flex" href="/">
@@ -52,8 +59,9 @@
     </ul>
 </nav>
 
-      <main id="main">
         
+        <main id="main" class="web-area">
+            
 	<div id="alertModal" class="modal">
 		<!-- Modal content -->
 		<div class="alert-modal-content cierralo-flex-colum">
@@ -72,7 +80,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="cierralo-flex-colum web-area">
+	<div class="cierralo-flex-colum">
 		<div class="user-title-container">
 			<h1 class="user-title-center cierralo-grey-text cierralo-font-helveltica-medium">Realizar oferta</h1>
 		</div>
@@ -146,7 +154,7 @@
 					</div>
 					<p class="terms-subtitle cierralo-grey-text cierralo-font-helveltica-medium">Estructura de venta de la propiedad </p>
 					<p class="terms-tiny-text cierralo-purple-grey cierralo-font-helveltica-neue-light">Si deseas saber más de la estructura
-	de la propiedad <a href="#" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
+	de la propiedad <a href="./buildingDetail.html" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
 					<div class="terms-options-container cierralo-flex-row">
 						<div class="cierralo-flex-colum with-domain-box active cursor-pointer" id="withGrey">
 							<p class="with-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">CON</p>
@@ -247,12 +255,14 @@
 		<div class="cierralo-offer-template-divider cierralo-flex-row">
 		</div>
 	</div>
-	<div class="mobile-alert-container cierralo-flex-colum">
-		<h1 class="mobile-alert-title cierralo-orange-text letter-spacing-dot-six cierralo-font-helveltica-bold">¡Lo sentimos!</h1>
-		<p class="mobile-alert-text cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Para poder ver esta sección es necesario iniciar sesión en un navegador web.</p>
-	</div>
 
-      </main>
+        </main>
+        
+            <div class="mobile-alert-container cierralo-flex-colum">
+	<h1 class="mobile-alert-title cierralo-orange-text letter-spacing-dot-six cierralo-font-helveltica-bold">¡Lo sentimos!</h1>
+	<p class="mobile-alert-text cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Para poder ver esta sección es necesario iniciar sesión en un navegador web.</p>
+</div>
+        
       <footer class="site-footer">
   <div class="footer cierralo-font-helveltica-thin" role="contentinfo">
         <div class="cierralo-main-footer cierralo-flex-colum">
@@ -277,7 +287,7 @@
                 </div>
                 <div class="cierralo-footer-right">
                     <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="/home/signUp"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin">Regístrate</button></a>
+                    <a href="/home/signUp"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
@@ -304,10 +314,11 @@
     <script src="./js/front_project_c.libs.js"></script>
     
     
-    <script src="./js/profile.js"></script>
-    <script src="./js/makeOffer.js"></script>
     <script src="./js/front_project_c.js"></script>
     
+        
+            <script src="./js/makeOffer.js"></script>
+        
     
   </body>
 </html>
