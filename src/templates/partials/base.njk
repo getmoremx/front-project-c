@@ -47,12 +47,12 @@
   </head>
   <body id="body">
     <div id="page">
-        {% if section == 'index' or section == 'buildingList' or section == 'buildingDetail' or section == 'login' or section == 'register'%}
+        {% if section == 'index' or section == 'buildingList' or section == 'login' or section == 'register'%}
             {% include 'partials/navbar.njk' %}
         {%else%}
             {% include 'partials/loggedNavbar.njk' %}
         {% endif %}
-        {% if section == 'login' or section == 'makeOffer' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling'%}
+        {% if section == 'login' or section == 'makeOffer' or section == 'buildingDetail' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling'%}
             <main id="main" class="web-area">
         {% else %}
             <main id="main" class="">
@@ -85,6 +85,10 @@
         {% elif section == 'dashboard' %}
             <script src="./js/dashboard.js"></script>
         {% elif section == 'scheduling' %}
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
+            <script src="./js/scheduling.js"></script>
+        {% elif section == 'schedule' %}
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
             <script src="./js/scheduling.js"></script>
