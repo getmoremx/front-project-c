@@ -1,0 +1,29 @@
+<div class="grey-navbar cierralo-flex-row-start">
+  <a href="" class="grey-navbar-link">
+    {% if section == 'dashboard' %}
+      <div class="grey-navbar-link-box active">
+    {% else %}
+      <div class="grey-navbar-link-box">
+    {% endif %}
+      <p class="grey-navbar-link-text cierralo-purplish-grey cierralo-font-helveltica-neue">Procesos actuales</p>
+    </div>
+  </a>
+  <a href="" class="grey-navbar-link">
+    {% if section == 'schedule' %}
+      <div class="grey-navbar-link-box active">
+    {% else %}
+      <div class="grey-navbar-link-box">
+    {% endif %}
+      <p class="grey-navbar-link-text cierralo-purplish-grey cierralo-font-helveltica-neue">Citas</p>
+    </div>
+  </a>
+  <a href="" class="grey-navbar-link">
+    {% if section == 'favorites' %}
+      <div class="grey-navbar-link-box active">
+    {% else %}
+      <div class="grey-navbar-link-box">
+    {% endif %}
+      <p class="grey-navbar-link-text cierralo-purplish-grey cierralo-font-helveltica-neue">Favoritos</p>
+    </div>
+  </a>
+</div>
