@@ -349,3 +349,6 @@ span.textLogo {
     padding-top: 15px;
     padding-bottom: 17px;
 }
+.no-decoration{
+    text-decoration: none;
+}
