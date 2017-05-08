@@ -183,7 +183,8 @@ Ciudad de México.</p>
                     var mapOptions = {
                     zoom: 15,
                     center: new google.maps.LatLng(19.4192741,-99.1646228),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false
                     };
                     map = new google.maps.Map(document.getElementById('googleMap'),
                     mapOptions);
