@@ -1,0 +1,111 @@
+.cierralo-purplish-grey-two{
+	color: #757176;
+}
+.dashboard-title{
+	font-size: 25px;
+	line-height: 56px;
+}
+.dashboard-header{
+	padding-top: 180px;
+}
+.dashboard-divider {
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+    width: 332px;
+    margin-bottom: 30px;
+}
+.second-dashboard-divider {
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+    width: 80%;
+    margin-bottom: 38px;
+}
+.dashboard-subtitle{
+	font-size: 17px;
+	padding-bottom: 33px;
+}
+.dashboard-text{
+	font-size: 17px;
+}
+.dashboard-discover-btn {
+    width: 157px;
+    height: 35px;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    padding: 9px 23px;
+    margin-bottom: 96px;
+    margin-top: 33px;
+}
+.discover-title{
+	font-size: 25px;
+	line-height: 56px;
+	padding-bottom: 64px;
+}
+.dashboard-building-photo-rectangle{
+	width: 245px;
+	height: 170px;
+}
+.dashboard-building-info-container {
+    -webkit-box-shadow: inset 0px 0px 0px 1px #e5e5e5;
+    -moz-box-shadow: inset 0px 0px 0px 1px #e5e5e5;
+    box-shadow: inset 0px 0px 0px 1px #e5e5e5;
+    vertical-align: top;
+    height: 170px;
+    margin: 0px;
+    width: 110px;
+    margin-left: -5px;
+    padding: 0px 24px;
+}
+.dashboard-building-container{
+	margin-right: 24px;
+}
+.dashboard-building-street-name {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 43px;
+}
+.slick-prev:before, .slick-next:before { 
+    color:#e86700 !important;
+}
+.slick-prev {
+	margin-left: 40px;
+}
+
+.slick-next {
+	margin-right: 40px;
+}
+.discover-slider{
+	width: 90%;
+	margin: auto;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 75% !important;
+    margin: auto !important;
+}
+.slick-prev {
+    left: 25px !important;
+}
+.slick-next {
+    right: 25px !important;
+}
+.prev{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/back.png') no-repeat;;
+}
+
+.next{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/next.png') no-repeat;;
+}
