@@ -1,0 +1,52 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+{% include 'partials/greyNavbar.njk' %}
+<div id="content" role="main" class="cierralo-content">
+    <div class="schedule-header cierralo-flex-colum">
+      <p class="schedule-title cierralo-font-helveltica-medium cierralo-purplish-grey-two">Citas Agendadas</p>
+    </div> 
+    <div class="scheduling-divider">
+
+    </div>
+    <div class="schedule-subtitle-box">
+      <p class="schedule-subtitle cierralo-font-helveltica-medium cierralo-purplish-grey-two">A continuación puedes ver las visitas que se encuentran pendientes</p>
+    </div>
+    <div class="calendar-section cierralo-flex-row">
+      <div class="grey-calendar-container cierralo-flex-colum">
+        <div id="datepicker">
+          
+        </div>
+      </div>
+      <div class="orange-info-container">
+        <div class="grey-left-arrow">
+        
+        </div>
+        <div class="schedule-address-container">
+          <p class="address-title cierralo-white-text cierralo-font-helveltica-medium letter-spacing-dot-three">Colima #154</p>
+          <div class="address-date-container cierralo-flex-row">
+            <img src="./img/icons/calendar.png" class="schedule-address-info-icon inline-block">
+            <p class="schedule-address-info-text inline-block cierralo-white-text cierralo-font-helveltica-neue">Vie 14 Sep, 2017</p>
+          </div>
+          <div class="address-date-container cierralo-flex-row">
+            <img src="./img/icons/clock.png" class="schedule-address-info-icon inline-block">
+            <p class="schedule-address-info-text inline-block cierralo-white-text cierralo-font-helveltica-neue">10:00 am</p>
+          </div>
+          <div class="address-date-container cierralo-flex-row">
+            <img src="./img/icons/profile.png" class="schedule-address-info-icon inline-block">
+            <p class="schedule-address-info-text inline-block cierralo-white-text cierralo-font-helveltica-neue">José Martínez</p>
+          </div>
+          <div class="address-date-container cierralo-flex-row">
+            <img src="./img/icons/tooltip.png" class="schedule-address-info-icon inline-block">
+            <p class="schedule-address-info-text inline-block cierralo-white-text cierralo-font-helveltica-neue">Agendado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cierralo-pre-footer-divider cierralo-flex-row">
+    </div>
+</div>
+{% endblock %}
