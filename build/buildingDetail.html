@@ -24,6 +24,23 @@
     <link rel="stylesheet" href="./css/makeOffer.css">
     <!--Login css file-->
     <link rel="stylesheet" href="./css/login.css">
+    <!--Register css file-->
+    <link rel="stylesheet" href="./css/register.css">
+    <!--Grey navbar css file-->
+    <link rel="stylesheet" href="./css/greyNavbar.css">
+    <!--Favorites css file-->
+    <link rel="stylesheet" href="./css/favorites.css">
+    <!--Dashboard css file-->
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!--Profile Edit css file-->
+    <link rel="stylesheet" href="./css/profileEdit.css">
+    <!--Scheduling css file-->
+    <link rel="stylesheet" href="./css/scheduling.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/schedule.css">
+    <!--Slick css file-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -33,43 +50,45 @@
     <div id="page">
         
             <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
-    <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span>
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
 </button>
 <nav id="navigation" class="cierralo-navbar">
-    <a class="navbar-brand" href="./">
-        <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
-    </a>
-    <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
+  <a class="navbar-brand" href="./">
+    <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
+  </a>
+  <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
 
 
-        <ul class="nav navbar-nav navbar-right">
-            <li class="cierralo-font-helveltica-neue"><a href="./buildingList.html">Departamentos</a></li>
-            <li class="cierralo-font-helveltica-neue"><a href="#">Cómo funciona</a></li>
-            <li class="cierralo-font-helveltica-neue"><a href="/login/auth">Inicia sesión</a></li>
-            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
-                <a href="/login/auth" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
-                </a>
-            </li>
-            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
-                <a href="/login/auth" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
-                </a>
-            </li>
-            <li class="cierralo-font-helveltica-neue no-margin-right"><a href="/login/auth"><img src="./img/icons/page-1-copy-5@3x.png" class="navbar-phone-icon"></a></a></li>
-            <li class="cierralo-font-helveltica-neue no-margin-right"><a href="/login/auth"><img src="./img/icons/page-1-copy-4@3x.png" class="navbar-phone-icon"></a></a></li>
+    <ul class="nav navbar-nav">
+      <li class="padding-top-20"><a href="./buildingList.html" class="cierralo-font-helveltica-neue">Departamentos</a></li>
+      <li class="padding-top-20"><a href="#" class="cierralo-font-helveltica-neue">¿Cómo funciona?</a></li>
+      <li class="padding-top-20"><a href="#" class="cierralo-font-helveltica-neue">Contacto</a></li>
+      <li class="padding-top-20"><div class="navbar-divider"></div></li>
+      <li id="dropdown-menu" class="cursor-pointer">
+        <p class="navbar-user-info inline-block cierralo-font-helveltica-neue">Carlos</p> 
+        <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block">
+        <ul class="cierralo-dropdown-menu" id="userMenu">
+          <div class="dropdown-arrow-up"></div>
+          <li class="navbar-user-menu-item"><a href="#" class="navbar-user-link first cierralo-white-text cierralo-font-helveltica-neue">Mi perfil</a></li>
+          <li class="navbar-user-menu-item"><a href="#" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
+          <li class="navbar-user-menu-item"><a href="#" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Cerrar sesión</a></li>
         </ul>
-        <div hidden="" class="cierralo-show-in-movil">
-            <a class="cierralo-center-flex" href="/">
-                <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
-            </a>
-        </div>
+      </li>
     </ul>
+    <div hidden="" class="cierralo-show-in-movil">
+      <a class="cierralo-center-flex" href="/">
+        <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
+      </a>
+    </div>
+  </ul>
 </nav>
+
         
-        <main id="main" class="web-area">
+        
+            <main id="main" class="web-area">
+        
             
     <div class="building-header">
             <div class="building-parallax cursor-pointer openGalleryModal" id="openGalleryModal" imageSrc="./img/photo532577139161512309.jpg">
@@ -251,7 +270,8 @@ Ciudad de México.</p>
                     var mapOptions = {
                     zoom: 15,
                     center: new google.maps.LatLng(19.4192741,-99.1646228),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false
                     };
                     map = new google.maps.Map(document.getElementById('googleMap'),
                     mapOptions);
@@ -325,9 +345,11 @@ Ciudad de México.</p>
     
     <script src="./js/front_project_c.js"></script>
     
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         
             <script src="./js/buildingDetail.js"></script>
         
+        <script src="./js/navbar.js"></script>
     
   </body>
 </html>
