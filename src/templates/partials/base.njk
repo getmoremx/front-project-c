@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="./css/greyNavbar.css">
     <!--Favorites css file-->
     <link rel="stylesheet" href="./css/favorites.css">
+    <!--Dashboard css file-->
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!--Slick css file-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -60,6 +65,7 @@
     {% endblock %}
     <script src="./js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         {% if section == 'profile' %}
             <script src="./js/profile.js"></script>
         {% elif section == 'makeOffer' %}
@@ -70,6 +76,8 @@
             <script src="./js/buildingDetail.js"></script>
         {% elif section == 'register' %}
             <script src="./js/register.js"></script>
+        {% elif section == 'dashboard' %}
+            <script src="./js/dashboard.js"></script>
         {% endif %}
     {% endblock %}
   </body>
