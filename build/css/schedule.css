@@ -1,0 +1,24 @@
+.schedule-title {
+    font-size: 25px;
+    line-height: 56px;
+    padding-bottom: 42px;
+}
+.schedule-header {
+    padding-top: 90px;
+}
+.schedule-subtitle{
+	font-size: 17px;
+	width: 315px;
+	text-align: center;
+}
+.schedule-subtitle-box{
+	padding-top: 53px;
+}
+.schedule-address-info-text{
+	font-size: 12px;
+}
+.schedule-address-info-icon{
+	width: 13px;
+	height: 13px;
+	margin-right: 10px;
+}
