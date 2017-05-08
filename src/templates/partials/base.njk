@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="./css/dashboard.css">
     <!--Profile Edit css file-->
     <link rel="stylesheet" href="./css/profileEdit.css">
+    <!--Scheduling css file-->
+    <link rel="stylesheet" href="./css/scheduling.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/schedule.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -80,6 +84,10 @@
             <script src="./js/register.js"></script>
         {% elif section == 'dashboard' %}
             <script src="./js/dashboard.js"></script>
+        {% elif section == 'scheduling' %}
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
+            <script src="./js/scheduling.js"></script>
         {% endif %}
     {% endblock %}
   </body>
