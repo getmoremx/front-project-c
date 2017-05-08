@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./css/makeOffer.css">
     <!--Login css file-->
     <link rel="stylesheet" href="./css/login.css">
+    <!--Register css file-->
+    <link rel="stylesheet" href="./css/register.css">
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -30,12 +32,16 @@
   </head>
   <body id="body">
     <div id="page">
-        {% if section == 'index' or section == 'buildingList' or section == 'buildingDetail' or section == 'login' %}
+        {% if section == 'index' or section == 'buildingList' or section == 'buildingDetail' or section == 'login' or section == 'register'%}
             {% include 'partials/navbar.njk' %}
         {%else%}
             {% include 'partials/loggedNavbar.njk' %}
         {% endif %}
-        <main id="main" class="web-area">
+        {% if section == 'login' or section == 'makeOffer' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling'%}
+            <main id="main" class="web-area">
+        {% else %}
+            <main id="main" class="">
+        {% endif %}
             {% block content %}{% endblock %}
         </main>
         {% if section == 'login' or section == 'makeOffer' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling'%}
@@ -58,6 +64,8 @@
             <script src="./js/buildingList.js"></script>
         {% elif section == 'buildingDetail' %}
             <script src="./js/buildingDetail.js"></script>
+        {% elif section == 'register' %}
+            <script src="./js/register.js"></script>
         {% endif %}
     {% endblock %}
   </body>
