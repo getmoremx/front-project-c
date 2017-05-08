@@ -6,6 +6,86 @@
 {% block content %}
 {% include 'partials/greyNavbar.njk' %}
 <div id="content" role="main" class="cierralo-content">
+    <div id="schedulingModal" class="scheduling-modal">
+      <!-- Modal content -->
+      <div class="scheduling-modal-content cierralo-flex-colum">
+        <div class="modal-close-btn-container">
+          <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+        </div>
+        <div class="dashboard-arrow-check-circle cierralo-flex-row cursor-pointer">
+          <img src="./img/icons/shape@3x.png" alt="" class="dashboard-arrow-check-icon">
+        </div>
+        <div class="scheduling-alert-modal-body cierralo-flex-colum">
+          <p class="scheduling-modal-title cierralo-grey-text cierralo-font-helveltica-medium letter-spacing-dot-one">Hemos registrado las fechas seleccionadas para la firma. Te contactaremos vía email para notificarte que fecha será la definitiva.</p>
+          <div class="scheduling-modal-divider"></div>
+          <div class="selected-dates-box">
+            <p class="selected-dates-title cierralo-purplish-grey-two cierralo-font-helveltica-medium">Fechas seleccionadas</p>
+            <div class="selected-date-box cierralo-flex-row">
+              <img src="./img/icons/Reloj.png" class="selected-date-icon inline-block">
+              <p class="selected-date-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Martes 18 Septiembre, 12:00 pm</p>
+            </div>
+            <div class="selected-date-box cierralo-flex-row">
+              <img src="./img/icons/Reloj.png" class="selected-date-icon inline-block">
+              <p class="selected-date-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Domingo 16 Septiembre, 13:00 pm</p>
+            </div>
+            <div class="selected-date-box cierralo-flex-row">
+              <img src="./img/icons/Reloj.png" class="selected-date-icon inline-block">
+              <p class="selected-date-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Lunes 2 Octubre, 13:00 pm</p>
+            </div>
+          </div>
+          <div class="scheduling-modal-divider"></div>
+          <div class="scheduling-map-container">
+            <div class="modal-orange-box">
+              <div class="modal-left-arrow"></div>
+              <p class="cierralo-white-text cierralo-font-helveltica-neue modal-map-text">Calle Colíma No. 228 <br>Colonia Roma Norte <br>Delegación Cuauhtémoc <br>C.P. 06700 <br>Ciudad de México</p>
+            </div>
+            <div class="scheduling-modal-map" id="schedulingModalMap">
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwzwWOG7rzZc7soDadgDWmVTpMnbMIQm4&sensor=false">
+              </script>
+              <script>
+                var mapModal;
+                function initialize() {
+                    var myLatLngModal = {lat: 19.4192741, lng: -99.1646228};
+                    var mapOptionsModal = {
+                    zoom: 15,
+                    center: new google.maps.LatLng(19.4192741,-99.1646228),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false
+                    };
+                    mapModal = new google.maps.Map(document.getElementById('schedulingModalMap'),
+                    mapOptionsModal);
+                    var marker = new google.maps.Marker({
+                        position: myLatLngModal,
+                        map: mapModal,
+                        title: 'Hello World!'
+                    });
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+              </script>
+            </div>
+          </div>
+          <div class="documents-container cierralo-flex-colum">
+            <p class="documents-title cierralo-purplish-grey-two cierralo-font-helveltica-medium">A continuación te damos una lista de documentos que no debes olvidar llevar.</p>
+            <div class="document-box cierralo-flex-row">
+              <div class="square-icon inline-block"></div>
+              <p class="document-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Documento A</p>
+            </div>
+            <div class="document-box cierralo-flex-row">
+              <div class="square-icon inline-block"></div>
+              <p class="document-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Documento B</p>
+            </div>
+            <div class="document-box cierralo-flex-row">
+              <div class="square-icon inline-block"></div>
+              <p class="document-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Documento C</p>
+            </div>
+            <div class="document-box cierralo-flex-row">
+              <div class="square-icon inline-block"></div>
+              <p class="document-text cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Documento D</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="scheduling-header cierralo-flex-colum">
       <p class="scheduling-title cierralo-font-helveltica-medium cierralo-purplish-grey-two">Agendación</p>
     </div> 
@@ -74,8 +154,6 @@
           <div class="orange-map-divider"></div>
         </div>
         <div class="schedule-map" id="scheduleMap">
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwzwWOG7rzZc7soDadgDWmVTpMnbMIQm4&sensor=false">
-          </script>
           <script>
                 var map;
                 function initialize() {
