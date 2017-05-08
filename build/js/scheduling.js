@@ -72,4 +72,9 @@ window.onclick = function(event) {
     modal.classList.remove('modal-open');
     body.classList.remove('modal-open');
   }
+$('#schedulingModal').on('shown', function () {
+  // also redefine center
+  map.setCenter(new google.maps.LatLng(54, -2));
+  google.maps.event.trigger(map, 'resize');
+})
 }
