@@ -91,10 +91,11 @@ img {
     float: left;
     list-style-type: none;
     margin-right: 0.8em;
-    padding-top: 8px;
+    padding-top: 13px;
+    padding-bottom: 8px;
 }
 .nav a {
-    color: #444444;
+    color: #757176;
     display: block;
     padding: 0.25em 0.7em;
     text-decoration: none;
