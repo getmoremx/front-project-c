@@ -1,5 +1,5 @@
 .profile-edit-container{
-	padding-top: 140px;
+	padding-top: 155px;
 }
 .edit-contact-mail{
 	font-size: 12px;
@@ -7,18 +7,18 @@
 	letter-spacing: -0.1px;
 }
 .edit-stars-container {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 15px;
 }
 .edit-profile-icon{
 	color: #d8d8d8;
-	font-size: 9px !important;
+	font-size: 11px !important;
 	float: right;
 	margin-right: 3px;
 	padding-top: 6px;
 }
 .profile-edit-info-box{
-	width: 180px;
+	width: 165px;
 }
 .edit-profile-link{
 	text-decoration: none;
