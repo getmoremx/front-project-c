@@ -1,23 +1,29 @@
 /*Section 1*/
 .cierralo-main-title {
     color: #757176;
-    font-size: 48px;
+    font-size: 34px;
     padding-top: 2px;
-    padding-left: 10px;
-
+    padding-left: 0px;
+    line-height: 47px;
 }
 .cierralo-font-size {
     font-size:16px !important;
 }
+.cierralo-black-text{
+    color: #444444;
+}
 .cierralo-sub-main-title {
     color: #f7971d;
-    font-size:33px;
+    font-size:24px;
     line-height: 1.2;
 }
 .cierralo-right-container {
     width: 241px;
     margin-left: 113px;
     font-size:15px;
+}
+.cierralo-logo-header{
+    width: 59px;
 }
 .cierralo-principal-comparative {
     background: url("../img/background/cierralo-n-e-wfinal-01.png");
@@ -27,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
-    margin-top: 70px;
+    margin-top: 5px;
     background-size: 100%;
     background-position-y: 100%;
 }
@@ -58,7 +64,7 @@
     margin-top: 1px;
 }
 .cierralo-main-divider {
-    width:226px;
+    width:130px;
     border-bottom:1px solid #e5e5e5;
     margin-bottom: 30px;
     margin-top: 28px;
@@ -214,7 +220,7 @@
     text-align: center;
     width: 415px;
     font-size: 24px;
-    padding-top: 100px;
+    padding-top: 36px;
     color:#444444;
     line-height: 1.4;
 }
@@ -273,11 +279,18 @@
     margin-right: 20px;
 }
 .no-padding-top{
-    padding-top: 0px !important
+    padding-top: 0px !important;
+    padding-right: 0px !important;
 }
 .navbar-phone-icon{
     width: 15px;
     height: 15px;
+}
+.navbar-whatsapp-icon{
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-left: -10px;
 }
 .no-margin-right{
     margin-right: 0px !important;
@@ -369,12 +382,12 @@
     margin-top: 20px;
 }
 .landing-onsale-container{
-    padding-top: 98px;
+    padding-top: 71px;
 }
 .onsale-divider{
     height: 1px;
     width: 106px;
-    background-color: #e5e5e5;
+    background-color: #cecdce;
     margin-top: 1px;
 }
 .onsale-box{
@@ -393,7 +406,7 @@
     line-height: 22px;
     letter-spacing: -0.4px;
     color: #39393a;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .cierralo-onsale-btn {
     width: 155px;
