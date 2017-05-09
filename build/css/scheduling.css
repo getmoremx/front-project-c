@@ -4,7 +4,7 @@
     padding-bottom: 20px;
 }
 .scheduling-header {
-    padding-top: 90px;
+    padding-top: 97px;
 }
 .scheduling-divider {
     border-bottom: 1px solid #e5e5e5;
@@ -15,7 +15,7 @@
 .steps-count-box{
 	position: relative;
 	width: 298px;
-	margin-top: 80px;
+	margin-top: 64px;
 }
 .steps-line{
 	width: 298px;
@@ -64,9 +64,10 @@
 	font-size: 17px;
 	width: 395px;
 	text-align: center;
+    line-height: 23px;
 }
 .scheduling-subtitle-box{
-	padding-top: 120px;
+	padding-top: 107px;
 }
 .calendar-section{
 	padding-top: 92px;
@@ -100,7 +101,7 @@
     border: none !important;
 }
 .ui-datepicker {
-    width: 319px !important;
+    width: 350px !important;
     padding: .2em .2em 0;
     display: none;
     background-color: #f5f5f5 !important;
@@ -118,6 +119,7 @@
 	padding-top: 5px;
 	border: solid 1px #f5f5f5;
 	margin: auto;
+    margin-top: 5px;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
     border: 1px solid #f5f5f5;
@@ -261,6 +263,9 @@ thead{
     font-weight: normal;
     color: #ffffff !important;
 }
+.ui-datepicker-calendar{
+    margin-top: 12px;
+}
 .schedule-save-btn {
     width: 157px;
     height: 35px;
@@ -323,9 +328,10 @@ thead{
 	padding-top: 26px;
 	padding-left: 17px;
 	letter-spacing: 0.7px;
+    line-height: 14px;
 }
 .orange-map-divider {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 0.5px solid #e5e5e5;
     height: 1px;
     width: 91px;
     margin-bottom: 30px;
@@ -423,7 +429,7 @@ thead{
     height: 62px;
     background-color: #e66700;
     border-radius: 100%;
-    margin-top: 89px;
+    margin-top: 69px;
 }
 .dashboard-arrow-check-icon {
     width: 24px;
@@ -440,13 +446,14 @@ thead{
     font-size: 17px;
     margin: 0px;
     padding-top: 4px;
-    padding-bottom: 6px;
+    padding-bottom: 21px;
     text-align: center;
-    width: 375px;
+    width: 460px;
+    line-height: 22px;
     margin: auto;
 }
 .scheduling-modal-title{
-	line-height: 20px;
+	line-height: 21px;
 	font-size: 18px;
 	text-align: center;
 	width: 410px;
@@ -455,7 +462,7 @@ thead{
 .scheduling-modal-divider {
     border-bottom: 1px solid #e5e5e5;
     height: 1px;
-    width: 70%;
+    width: 75%;
     margin-bottom: 47px;
     margin-top: 47px;
 }
@@ -507,6 +514,7 @@ thead{
 	letter-spacing: 0.7px;
 	padding-top: 10px;
 	padding-left: 13px;
+    line-height: 13px;
 }
 .modal-left-arrow{
 	width: 0; 
