@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="./css/scheduling.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/schedule.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postAparmentFeatures.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -52,14 +54,14 @@
         {%else%}
             {% include 'partials/loggedNavbar.njk' %}
         {% endif %}
-        {% if section == 'login' or section == 'makeOffer' or section == 'buildingDetail' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling'%}
+        {% if section == 'login' or section == 'makeOffer' or section == 'buildingDetail' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling' or section == 'postAparmentFeatures'%}
             <main id="main" class="web-area">
         {% else %}
             <main id="main" class="">
         {% endif %}
             {% block content %}{% endblock %}
         </main>
-        {% if section == 'login' or section == 'makeOffer' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling'%}
+        {% if section == 'login' or section == 'makeOffer' or section == 'profile' or section == 'profileEdit' or section == 'favorites' or section == 'dashboard' or section == 'schedule' or section == 'scheduling' or section == 'postAparmentFeatures'%}
             {% include 'partials/alertMobile.njk' %}
         {% endif %}
       {% include 'partials/footer.njk' %}
