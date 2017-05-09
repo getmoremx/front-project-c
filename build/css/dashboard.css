@@ -1,5 +1,5 @@
 .cierralo-purplish-grey-two{
-	color: #757176;
+	color: #625e63;
 }
 .dashboard-title{
 	font-size: 25px;
@@ -61,6 +61,8 @@
 }
 .dashboard-building-container{
 	margin-right: 24px;
+  width: 408px;
+  margin: auto;
 }
 .dashboard-building-street-name {
     font-size: 20px;
@@ -210,4 +212,22 @@
     text-align: center;
     width: 375px;
     margin: auto;
+}
+@media only screen and (max-width: 1030px){
+  .dashboard-building-container{
+    width: 245px;
+    margin: auto;
+  }
+  .dashboard-building-info-container {
+    -webkit-box-shadow: inset 0px 0px 0px 1px #e5e5e5;
+    -moz-box-shadow: inset 0px 0px 0px 1px #e5e5e5;
+    box-shadow: inset 0px 0px 0px 1px #e5e5e5;
+    vertical-align: top;
+    height: 170px;
+    margin: 0px;
+    width: 197px;
+    margin-left: 0px;
+    margin-top: -4px;
+    padding: 0px 24px;
+  }
 }
