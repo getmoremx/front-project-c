@@ -1,5 +1,8 @@
 .login-header{
-	padding-top: 104px;
+	padding-top: 97px;
+}
+.login-header-container{
+	padding-top: 89px;
 }
 .login-title{
 	font-size: 25px;
@@ -10,11 +13,14 @@
 	font-size: 17px;
 	margin: 0px;
 }
+.cierralo-or-color{
+	color: #e0e0e0;
+}
 .login-divider{
 	height: 1px;
 	width: 75%;
 	background-color: #e5e5e5;
-	margin-top: 31px;
+	margin-top: 21px;
 }
 .login-social{
 	padding-top: 60px;
@@ -84,10 +90,10 @@
 .input-label-box{
 	height: 47px;
 	margin-top: 20px;
-	padding-right: 31px;
+	padding-right: 44px;
 }
 .login-input{
-	width: 100%;
+	width: 320px;
 	height: 47px;
 	background-color: #FFFFFF;
 	padding: 0px;
@@ -102,14 +108,15 @@
 	margin-top: 20px;
 }
 .login-options-container{
-	padding-top: 46px;
+	padding-top: 32px;
 }
 .letter-spacing-less-two{
 	letter-spacing: -0.2px;
 }
 .login-password-text{
 	font-size: 16px;
-	padding-left: 10px;
+	padding-left: 5px;
+	vertical-align: top;
 }
 .login-input:focus{
 	background-color: #ffffff;
@@ -128,7 +135,7 @@
     color: white;
     margin: 0;
     text-align: center;
-    margin-top: 31px;
+    margin-top: 24px;
     font-size: 15px;
 }
 .seller-login-link{
@@ -144,4 +151,5 @@
 }
 .seller-login-box{
 	padding-top: 27px;
+	padding-left: 5px;
 }
