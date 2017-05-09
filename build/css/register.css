@@ -1,3 +1,11 @@
+.register-header{
+	padding-top: 18px;
+}
+.register-title{
+	font-size: 25px;
+	line-height: 56px;
+	margin: 0px;
+}
 .user-type-box.active:hover{
 	background: #F7971C;
 	-webkit-box-shadow:inset 0px 0px 0px 1px #F7971C;
@@ -13,7 +21,7 @@
 }
 .user-type-text{
 	text-align: center;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 14px;
 }
 .user-type-box{
@@ -23,15 +31,15 @@
 	-webkit-box-shadow:inset 0px 0px 0px 1px #757176;
 	-moz-box-shadow:inset 0px 0px 0px 1px #757176;
 	box-shadow:inset 0px 0px 0px 1px #757176;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 6px;
+	margin-right: 6px;
 	transition: all 0.2s linear;
 	-webkit-transition:: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 }
 .register-input{
-	width: 345px;
+	width: 325px;
 	height: 47px;
 	background-color: #FFFFFF;
 	padding: 0px;
@@ -43,11 +51,14 @@
     font-size: 16px;
 }
 .register-container{
-	padding-right: 70px;
+	padding-right: 95px;
 }
 .register-body{
-	padding-top: 50px;
+	padding-top: 58px;
 }
 .mobile-input{
 	display: none;
+}
+.user-options-container{
+	padding-top: 2px;
 }
