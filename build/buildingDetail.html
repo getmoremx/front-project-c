@@ -52,46 +52,65 @@
     <div id="page">
         
             <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-  </span>
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
 </button>
 <nav id="navigation" class="cierralo-navbar">
-  <a class="navbar-brand" href="./">
-    <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
-  </a>
-  <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
+    <a class="navbar-brand" href="./">
+        <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
+    </a>
+    <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
 
 
-    <ul class="nav navbar-nav">
-      <li class="padding-top-20"><a href="./buildingList.html" class="cierralo-font-helveltica-neue">Departamentos</a></li>
-      <li class="padding-top-20"><a href="#" class="cierralo-font-helveltica-neue">¿Cómo funciona?</a></li>
-      <li class="padding-top-20"><a href="./profile.html" class="cierralo-font-helveltica-neue">Contacto</a></li>
-      <li class="padding-top-20"><div class="navbar-divider"></div></li>
-      <li id="dropdown-menu" class="cursor-pointer">
-        <p class="navbar-user-info inline-block cierralo-font-helveltica-neue">Carlos</p> 
-        <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block">
-        <ul class="cierralo-dropdown-menu" id="userMenu">
-          <div class="dropdown-arrow-up"></div>
-          <li class="navbar-user-menu-item"><a href="./profileEdit.html" class="navbar-user-link first cierralo-white-text cierralo-font-helveltica-neue">Mi perfil</a></li>
-          <li class="navbar-user-menu-item"><a href="./dashboard.html" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
-          <li class="navbar-user-menu-item"><a href="./index.html" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Cerrar sesión</a></li>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./buildingList.html">Departamentos</a></li>
+            <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="#">Cómo funciona</a></li>
+            <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./login.html">Inicia sesión</a></li>
+            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
+                <a href="/register.html" class="no-padding-top">
+                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
+                </a>
+            </li>
+            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
+                <a href="/login.html" class="no-padding-top">
+                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
+                </a>
+            </li>
+            <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
+                <a href="./login.html">
+                    <img src="./img/icons/page-1-copy-5@3x.png" class="navbar-phone-icon">
+                </a>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+            </li>
+            <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
+                <a href="./login.html">
+                    <img src="./img/icons/page-1-copy-4@3x.png" class="navbar-whatsapp-icon">
+                </a>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+            </li>
         </ul>
-      </li>
+        <div hidden="" class="cierralo-show-in-movil">
+            <a class="cierralo-center-flex" href="/">
+                <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
+            </a>
+        </div>
     </ul>
-    <div hidden="" class="cierralo-show-in-movil">
-      <a class="cierralo-center-flex" href="/">
-        <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
-      </a>
-    </div>
-  </ul>
 </nav>
-
         
         
             <main id="main" class="web-area">
         
             
+    <style type="text/css">
+        body{
+            opacity: 0;
+            -webkit-transition: all 1s ease-out;  
+            -moz-transition: all 1s ease-out;  
+            -o-transition: all 1s ease-out;  
+            transition: all 1s ease-out;
+        }
+    </style>
     <div class="building-header">
             <div class="building-parallax cursor-pointer openGalleryModal" id="openGalleryModal" imageSrc="./img/photo532577139161512309.jpg">
                 
@@ -112,7 +131,7 @@
             </div>
         </div>
     </div>
-    <div class="building-main">
+    <div class="building-main onload">
         <div class="galery-container cierralo-flex-row-flex-start">
             <div class="more-button-container cursor-pointer">
                 <img src="./img/icons/more.png" alt="" class="more-icon-gallery">
@@ -132,7 +151,7 @@
                     <p class="user-name letter-spacing-dot-six cierralo-font-helveltica-neue-light cierralo-greyish-two">José Martínez</p>
                 </div>
                 <div class="owner-contact-container">
-                    <a href="./profile.html" class="contact-link cursor-pointer"><p class="contact-link-text letter-spacing-dot-six cierralo-font-helveltica-neue-light cierralo-orange-text">Contáctalo</p></a>
+                    <a href="./login.html" class="contact-link cursor-pointer"><p class="contact-link-text letter-spacing-dot-six cierralo-font-helveltica-neue-light cierralo-orange-text">Contáctalo</p></a>
                 </div>
             </div>
             <div class="building-text-container">
@@ -165,30 +184,30 @@ Ciudad de México.</p>
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/page-1@3x.png" alt="" class="feature-icon-rule">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">m2</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light meters">m2</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/fill-1@3x.png" alt="" class="feature-icon-bed">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">2 cuartos</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light rooms">2 cuartos</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/group-3@3x.png" alt="" class="feature-icon-shower">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">2 baños</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light toilets">2 baños</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/icon-car.png" alt="" class="feature-icon-car">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">2 espacios</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light places">2 espacios</p>
                     </div>
                 </div>
                 <div class="building-buttons-container">
-                    <a href="./makeOffer.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer">Realizar oferta</button></a>
-                    <a href="./scheduling.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
+                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer">Realizar oferta</button></a>
+                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
                 </div>
             </div>
             <div class="building-share-container">
@@ -299,7 +318,7 @@ Ciudad de México.</p>
         <div class="cierralo-main-footer cierralo-flex-colum">
             <div class="cierralo-row-one cierralo-flex-row cierralo-max-width">
                 <div class="cierralo-flex-colum cierralo-no-center">
-                    <a href="/">
+                    <a href="./">
                         <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
                     </a>
                     <p>© 2017</p>
@@ -318,7 +337,7 @@ Ciudad de México.</p>
                 </div>
                 <div class="cierralo-footer-right">
                     <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="/home/signUp"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
