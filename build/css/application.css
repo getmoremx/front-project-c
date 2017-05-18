@@ -352,3 +352,6 @@ span.textLogo {
 .no-decoration{
     text-decoration: none;
 }
+button{
+    outline: none !important;
+}
