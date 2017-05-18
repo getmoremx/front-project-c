@@ -35,36 +35,27 @@ function openGallery() {
 function carousel(arrow) {
 	var carousel = document.getElementsByClassName('image-gallery');
 	var carouselBox = document.getElementById('carouselBox');
-	console.log(carousel);
 	for (var i = 0; i < carousel.length; i++) {
-		console.log(galleryImage.getAttribute("src") + '--' + carousel[i].getAttribute("imageSrc"));
 		if (galleryImage.getAttribute("src") == carousel[i].getAttribute("imageSrc")){
 			if(arrow.getAttribute('id') == 'arrow-left'){
 				if((i - 1) < 0){
 					image = carouselBox.lastElementChild;
-					console.log(image);
 					galleryImage.src= image.getAttribute("imageSrc");
-					console.log('ultimo');
 					break;
 				}
 				else{
 					galleryImage.src= carousel[i - 1].getAttribute("imageSrc");
-					console.log('antes');
 					break;
 				}
 			}
 			else if(arrow.getAttribute('id') == 'arrow-right'){
-				console.log(i);
 				if((i + 1) == carousel.length){
 					image = carouselBox.children[0];
-					console.log(image);
 					galleryImage.src= image.getAttribute("imageSrc");
-					console.log('primero');
 					break;
 				}
 				else{
 					galleryImage.src = carousel[i + 1].getAttribute("imageSrc");
-					console.log('despues');
 					break;
 				}
 			}
@@ -72,11 +63,9 @@ function carousel(arrow) {
 	}
 }
 leftArrow.onclick = function() {
-	console.log('izquierda');
 	carousel(this);
 }
 rightArrow.onclick = function() {
-	console.log('derecha');
 	carousel(this);
 }
 for (var i = 0; i < galleryBtns.length; i++) {
@@ -95,3 +84,34 @@ window.onclick = function(event) {
 		body.classList.remove('modal-open');
 	}
 }
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+var build = getUrlVars()["build"];
+$.ajax({
+        url : 'https://demo6292426.mockable.io/c-properties',
+        type: "GET",
+        dataType: 'json',
+        success:function(data) {
+            $('.building-street-text').text(data.Propiedades[build].calle);
+            $('.building-place-text').text(data.Propiedades[build].colonia);
+            $('.building-price-text').text(data.Propiedades[build].precio.substring(1, 4) + ' MDP');
+            $('.building-full-address-text').text(data.Propiedades[build].calle + ' Colonia ' + data.Propiedades[build].colonia + ' ' + data.Propiedades[build].estado + ' ' + data.Propiedades[build].pais);
+        	$('.building-feature-text.meters').text(data.Propiedades[build].metrosCuadrados + ' m2');
+        	$('.building-feature-text.rooms').text(data.Propiedades[build].cuartos + ' cuartos');
+        	$('.building-feature-text.toilets').text(data.Propiedades[build].toilets + ' baños');
+        	$('.building-feature-text.places').text(data.Propiedades[build].PisoEnElQueSeEncuentra + ' espacios');
+        	$('.building-about-text').text(data.Propiedades[build].descripción);
+        }
+      });
+
+$('body').addClass('onload');
