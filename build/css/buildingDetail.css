@@ -82,7 +82,7 @@
 .love-icon-container{
 	position: absolute;
 	top: 3px;
-	right: 23px;
+	right: -23px;
 }
 .icon-love-detail{
     color: #e66700;
@@ -301,4 +301,11 @@
     -moz-transition: background 1s ease-out;  
     -o-transition: background 1s ease-out;  
     transition: background 1s ease-out; 
+}
+.onload{
+	opacity: 1 !important;
+	-webkit-transition: all 3s ease-out;  
+    -moz-transition: all 3s ease-out;  
+    -o-transition: all 3s ease-out;  
+    transition: all 3s ease-out;
 }
