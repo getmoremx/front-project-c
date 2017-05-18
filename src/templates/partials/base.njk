@@ -49,7 +49,7 @@
   </head>
   <body id="body">
     <div id="page">
-        {% if section == 'index' or section == 'buildingList' or section == 'login' or section == 'register'%}
+        {% if section == 'index' or section == 'buildingList' or section == 'buildingDetail' or section == 'login' or section == 'register'%}
             {% include 'partials/navbar.njk' %}
         {%else%}
             {% include 'partials/loggedNavbar.njk' %}
