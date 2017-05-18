@@ -3,6 +3,15 @@
 {% block meta %}
 {% endblock %}
 {% block content %}
+    <style type="text/css">
+        body{
+            opacity: 0;
+            -webkit-transition: all 1s ease-out;  
+            -moz-transition: all 1s ease-out;  
+            -o-transition: all 1s ease-out;  
+            transition: all 1s ease-out;
+        }
+    </style>
     <div class="building-header">
             <div class="building-parallax cursor-pointer openGalleryModal" id="openGalleryModal" imageSrc="./img/photo532577139161512309.jpg">
                 
@@ -23,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="building-main">
+    <div class="building-main onload">
         <div class="galery-container cierralo-flex-row-flex-start">
             <div class="more-button-container cursor-pointer">
                 <img src="./img/icons/more.png" alt="" class="more-icon-gallery">
@@ -43,7 +52,7 @@
                     <p class="user-name letter-spacing-dot-six cierralo-font-helveltica-neue-light cierralo-greyish-two">José Martínez</p>
                 </div>
                 <div class="owner-contact-container">
-                    <a href="./profile.html" class="contact-link cursor-pointer"><p class="contact-link-text letter-spacing-dot-six cierralo-font-helveltica-neue-light cierralo-orange-text">Contáctalo</p></a>
+                    <a href="./login.html" class="contact-link cursor-pointer"><p class="contact-link-text letter-spacing-dot-six cierralo-font-helveltica-neue-light cierralo-orange-text">Contáctalo</p></a>
                 </div>
             </div>
             <div class="building-text-container">
@@ -76,30 +85,30 @@ Ciudad de México.</p>
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/page-1@3x.png" alt="" class="feature-icon-rule">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">m2</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light meters">m2</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/fill-1@3x.png" alt="" class="feature-icon-bed">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">2 cuartos</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light rooms">2 cuartos</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/group-3@3x.png" alt="" class="feature-icon-shower">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">2 baños</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light toilets">2 baños</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
                             <img src="./img/icons/icon-car.png" alt="" class="feature-icon-car">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">2 espacios</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light places">2 espacios</p>
                     </div>
                 </div>
                 <div class="building-buttons-container">
-                    <a href="./makeOffer.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer">Realizar oferta</button></a>
-                    <a href="./scheduling.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
+                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer">Realizar oferta</button></a>
+                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
                 </div>
             </div>
             <div class="building-share-container">
