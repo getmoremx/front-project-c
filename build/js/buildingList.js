@@ -1,21 +1,23 @@
 var iconHeart = document.getElementsByClassName("icon-love");
-
-for (var i = 0; i < iconHeart.length; i++) {
+function iconLovers() {
+  for (var i = 0; i < iconHeart.length; i++) {
     iconHeart[i].addEventListener('click', function( e ){
-	    e = window.event || e; 
-	    if(this === e.target) {
-	        e.preventDefault();
-	        if(this.classList.contains('fa-heart-o')){
-				this.classList.add('fa-heart');
-				this.classList.remove('fa-heart-o');
-			}
-			else if (this.classList.contains('fa-heart')){
-				this.classList.add('fa-heart-o');
-				this.classList.remove('fa-heart');
-			}
-	    }
-	});
+        e = window.event || e; 
+        if(this === e.target) {
+            e.preventDefault();
+            if(this.classList.contains('fa-heart-o')){
+          this.classList.add('fa-heart');
+          this.classList.remove('fa-heart-o');
+        }
+        else if (this.classList.contains('fa-heart')){
+          this.classList.add('fa-heart-o');
+          this.classList.remove('fa-heart');
+        }
+        }
+    });
+  }
 }
+iconLovers();
 var municipality = document.getElementsByClassName("cierralo-municipality");
 function municipalityClick() {
   var toggleMunicipality = function() {
@@ -50,6 +52,7 @@ $.ajax({
             sliderRangeValue.push(data.Propiedades[i].precio.substring(1, 4));
           }
           municipalityClick();
+          iconLovers()
           var seen = {};
           $('.cierralo-municipality').each(function() {
               var txt = $(this).text();
@@ -62,14 +65,15 @@ $.ajax({
         }
       });
 sliderRangeValue.sort();
-function buildFilter() {
+/*function buildFilter() {
   var filterArray = [];
   $('.cierralo-building-feature').each(function(index, el) {
     $(this).show();
     $(this).removeClass('checked-build');
   });
-  $('.municipality-container.active').each(function(index, el) {
-    filterArray.push($(this).text());
+  $('.cierralo-municipality.active').each(function(index, el) {
+      filterArray.push($(this).text());
+      console.log(filterArray);
   });
   for(item in filterArray){
     console.log(item);
@@ -80,7 +84,7 @@ function buildFilter() {
     });
   }
   $('.cierralo-building-feature').not($('.cierralo-building-feature.checked-build')).hide();
-}
+}*/
 function getVals(){
   // Get slider values
   var parent = this.parentNode;
@@ -93,6 +97,20 @@ function getVals(){
   var slider2 = document.getElementById('slider-2');
       slider1.innerHTML = slide1 + " MDP";
       slider2.innerHTML = slide2 + " MDP";
+  $('.cierralo-all-price').each(function(index, el) {
+    console.log('slider');
+    $(this).closest('cierralo-building-feature').show();
+    var priceValue = $(this).text();
+    priceValue = priceValue.replace("MDP", " ");
+    priceValue = priceValue.replace(",", ".");
+    console.log(priceValue + ' ' + slide1)
+    if(priceValue < slide1 || priceValue > slide2){
+      $(this).closest('.cierralo-building-feature').hide();
+    }
+    else{
+      $(this).closest('.cierralo-building-feature').show();
+    }
+  });
 }
 
 window.onload = function(){
