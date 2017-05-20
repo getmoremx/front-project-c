@@ -1,0 +1,155 @@
+.login-header{
+	padding-top: 97px;
+}
+.login-header-container{
+	padding-top: 89px;
+}
+.login-title{
+	font-size: 25px;
+	line-height: 56px;
+	margin: 0px;
+}
+.login-subtitle{
+	font-size: 17px;
+	margin: 0px;
+}
+.cierralo-or-color{
+	color: #e0e0e0;
+}
+.login-divider{
+	height: 1px;
+	width: 75%;
+	background-color: #e5e5e5;
+	margin-top: 21px;
+}
+.login-social{
+	padding-top: 60px;
+}
+.facebook-button{
+	background-color: #395997;
+	width: 267px;
+	height: 56px;
+}
+.login-icon-social{
+	width: 20px;
+	height: auto;
+	margin-right: 15px;
+}
+.button-text{
+	font-size: 16px;
+}
+.facebook-button{
+	background-color: #395997;
+	width: 267px;
+	height: 56px;
+}
+.google-button{
+	width: 267px;
+	height: 56px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    -moz-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    margin-top: 17px;
+}
+.login-or-text{
+    font-size: 15px;
+    margin: 0;
+}
+.login-or-box{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.login-or-line-divider{
+    height: 1px;
+    width: 240px;
+    background-color: #e5e5e5;
+    margin-top: 1px;
+}
+.login-or-container{
+	padding-top: 50px;
+}
+.input-label-text{
+	font-size: 16px;
+}
+.input-container{
+	width: 345px;
+}
+.cierralo-flex-row-start{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cierralo-flex-row-input-end{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.input-label-box{
+	height: 47px;
+	margin-top: 20px;
+	padding-right: 44px;
+}
+.login-input{
+	width: 320px;
+	height: 47px;
+	background-color: #FFFFFF;
+	padding: 0px;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    -moz-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.input-box{
+	margin-top: 20px;
+}
+.login-options-container{
+	padding-top: 32px;
+}
+.letter-spacing-less-two{
+	letter-spacing: -0.2px;
+}
+.login-password-text{
+	font-size: 16px;
+	padding-left: 5px;
+	vertical-align: top;
+}
+.login-input:focus{
+	background-color: #ffffff;
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    -moz-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+}
+.cierralo-login-btn{
+	width: 127px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 15px;
+}
+.seller-login-link{
+	text-decoration: none;
+}
+.seller-border-link{
+	border-bottom: solid 1px #757176;
+	padding-bottom: 2px;
+}
+.seller-login-text{
+	font-size: 16px;
+	margin-right: 20px;
+}
+.seller-login-box{
+	padding-top: 27px;
+	padding-left: 5px;
+}

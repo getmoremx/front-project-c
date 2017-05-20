@@ -16,46 +16,86 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
+    <!--All building list css file-->
+    <link rel="stylesheet" href="./css/buildingList.css">
+    <!--Building details css file-->
+    <link rel="stylesheet" href="./css/buildingDetail.css">
+    <!--Make offer css file-->
+    <link rel="stylesheet" href="./css/makeOffer.css">
+    <!--Login css file-->
+    <link rel="stylesheet" href="./css/login.css">
+    <!--Register css file-->
+    <link rel="stylesheet" href="./css/register.css">
+    <!--Grey navbar css file-->
+    <link rel="stylesheet" href="./css/greyNavbar.css">
+    <!--Favorites css file-->
+    <link rel="stylesheet" href="./css/favorites.css">
+    <!--Dashboard css file-->
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!--Profile Edit css file-->
+    <link rel="stylesheet" href="./css/profileEdit.css">
+    <!--Scheduling css file-->
+    <link rel="stylesheet" href="./css/scheduling.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/schedule.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postAparmentFeatures.css">
+    <!--Slick css file-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title> - front project c</title>
   </head>
-  <body>
+  <body id="body">
     <div id="page">
-      <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
-    <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span>
+        
+            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
 </button>
 <nav id="navigation" class="cierralo-navbar">
-    <a class="navbar-brand" href="/">
-        <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
-    </a>
-    <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
+  <a class="navbar-brand" href="./">
+    <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
+  </a>
+  <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
 
 
-        <ul class="nav navbar-nav">
-            <li class="padding-top-20"><a href="#">Departamentos</a></li>
-            <li class="padding-top-20"><a href="#">¿Cómo funciona?</a></li>
-            <li class="padding-top-20"><a href="#">Contacto</a></li>
-            <li class="padding-top-20"><div class="navbar-divider"></div></li>
-            <li><a href="/login/auth"><p class="navbar-user-info inline-block">Carlos</p> <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block"></a></li>
+    <ul class="nav navbar-nav">
+      <li class="padding-top-20"><a href="./buildingList.html" class="cierralo-font-helveltica-neue">Departamentos</a></li>
+      <li class="padding-top-20"><a href="#" class="cierralo-font-helveltica-neue">¿Cómo funciona?</a></li>
+      <li class="padding-top-20"><a href="./profile.html" class="cierralo-font-helveltica-neue">Contacto</a></li>
+      <li class="padding-top-20"><div class="navbar-divider"></div></li>
+      <li id="dropdown-menu" class="cursor-pointer">
+        <p class="navbar-user-info inline-block cierralo-font-helveltica-neue">Carlos</p> 
+        <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block">
+        <ul class="cierralo-dropdown-menu" id="userMenu">
+          <div class="dropdown-arrow-up"></div>
+          <li class="navbar-user-menu-item"><a href="./profileEdit.html" class="navbar-user-link first cierralo-white-text cierralo-font-helveltica-neue">Mi perfil</a></li>
+          <li class="navbar-user-menu-item"><a href="./dashboard.html" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
+          <li class="navbar-user-menu-item"><a href="./index.html" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Cerrar sesión</a></li>
         </ul>
-        <div hidden="" class="cierralo-show-in-movil">
-            <a class="cierralo-center-flex" href="/">
-                <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
-            </a>
-        </div>
+      </li>
     </ul>
+    <div hidden="" class="cierralo-show-in-movil">
+      <a class="cierralo-center-flex" href="/">
+        <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
+      </a>
+    </div>
+  </ul>
 </nav>
 
-      <main id="main">
         
+        
+            <main id="main" class="web-area">
+        
+            
 	<div id="contactModal" class="modal">
 		<!-- Modal content -->
 		<div class="modal-content cierralo-flex-colum">
-			<div class="modal-close-btn-container">
+			<div class="modal-close-btn-container cursor-pointer">
 				<span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
 			</div>
 			<div class="modal-header cierralo-flex-row">
@@ -99,7 +139,7 @@
 					<i class="fa fa-star-half-o rate-star" aria-hidden="true"></i>
 					<i class="fa fa-star-o rate-star" aria-hidden="true"></i>
 				</div>
-				<button class="cierralo-font-helveltica-neue-light cierralo-contact-btn cierralo-btn-secondary cierralo-remove-margin letter-spacing-dot-six" id="modalButton">Contactar</button>
+				<button class="cierralo-font-helveltica-neue-light cierralo-contact-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer" id="modalButton">Contactar</button>
 			</div>
 		</div>
 		<div class="buildings-title-container">
@@ -116,7 +156,7 @@
 
 				</div>
 				<p class="building-cost cierralo-orange-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">5.2 MDP</p>
-				<a href="/home/signUp"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary cierralo-remove-margin letter-spacing-dot-six">Ver más</button></a>
+				<a href="./buildingDetail.html"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer">Ver más</button></a>
 			</div>
 		</div>
 		<div class="building-container">
@@ -130,7 +170,7 @@
 
 				</div>
 				<p class="building-cost cierralo-orange-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">5.2 MDP</p>
-				<a href="/home/signUp"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary cierralo-remove-margin letter-spacing-dot-six">Ver más</button></a>
+				<a href="./buildingDetail.html"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary letter-spacing-dot-six cursor pointer">Ver más</button></a>
 			</div>
 		</div>
 		<div class="building-container">
@@ -144,22 +184,28 @@
 
 				</div>
 				<p class="building-cost cierralo-orange-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">5.2 MDP</p>
-				<a href="/home/signUp"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary cierralo-remove-margin letter-spacing-dot-six">Ver más</button></a>
+				<a href="./buildingDetail.html"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer">Ver más</button></a>
 			</div>
 		</div>
-		<a href="/home/signUp"><button class="cierralo-font-helveltica-neue-light cierralo-more-btn cierralo-btn-secondary cierralo-remove-margin">Ver más</button></a>
+		<a href="./buildingList.html"><button class="cierralo-font-helveltica-neue-light cierralo-more-btn cierralo-btn-secondary cursor-pointer">Ver más</button></a>
 		<div class="cierralo-pre-footer-divider cierralo-flex-row">
 
 		</div>
 	</div>
 
-      </main>
+        </main>
+        
+            <div class="mobile-alert-container cierralo-flex-colum">
+	<h1 class="mobile-alert-title cierralo-orange-text letter-spacing-dot-six cierralo-font-helveltica-bold">¡Lo sentimos!</h1>
+	<p class="mobile-alert-text cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Para poder ver esta sección es necesario iniciar sesión en un navegador web.</p>
+</div>
+        
       <footer class="site-footer">
   <div class="footer cierralo-font-helveltica-thin" role="contentinfo">
         <div class="cierralo-main-footer cierralo-flex-colum">
             <div class="cierralo-row-one cierralo-flex-row cierralo-max-width">
                 <div class="cierralo-flex-colum cierralo-no-center">
-                    <a href="/">
+                    <a href="./">
                         <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
                     </a>
                     <p>© 2017</p>
@@ -178,7 +224,7 @@
                 </div>
                 <div class="cierralo-footer-right">
                     <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="/home/signUp"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin">Regístrate</button></a>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
@@ -205,9 +251,13 @@
     <script src="./js/front_project_c.libs.js"></script>
     
     
-    <script src="./js/profile.js"></script>
     <script src="./js/front_project_c.js"></script>
     
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        
+            <script src="./js/profile.js"></script>
+        
+        <script src="./js/navbar.js"></script>
     
   </body>
 </html>

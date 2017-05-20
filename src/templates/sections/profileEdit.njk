@@ -1,0 +1,52 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+{% include 'partials/greyNavbar.njk' %}
+  <div class="profile-edit-container cierralo-flex-colum">
+    <div class="user-header-info">
+      <div class="user-photo-container inline-block">
+        <img src="./img/dude.png" alt="" class="user-seller-photo">
+      </div>
+      <div class="user-info-container inline-block">
+        <h1 class="user-seller-name cierralo-purplish-grey cierralo-font-helveltica-bold">José Martínez</h1>
+        <p class="user-seller-membership cierralo-purplish-grey cierralo-font-helveltica-neue-light">Miembro desde Septiembre 2016</p>
+        <div class="edit-stars-container">
+          <i class="fa fa-star rate-star" aria-hidden="true"></i>
+          <i class="fa fa-star rate-star" aria-hidden="true"></i>
+          <i class="fa fa-star rate-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o rate-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o rate-star" aria-hidden="true"></i>
+        </div>
+        <div class="profile-edit-info-box">
+          <a href="" class="edit-profile-link">
+            <p class="inline-block cierralo-font-helveltica-medium cierralo-purplish-grey-two edit-contact-mail">carloslpz@gmail.com</p>
+          </a>
+          <i class="fa fa-lock edit-profile-icon" aria-hidden="true"></i>
+          <i class="fa fa-pencil-square-o edit-profile-icon" aria-hidden="true"></i>
+        </div>
+        <div class="profile-edit-info-box">
+          <a href="" class="edit-profile-link">
+            <p class="inline-block cierralo-font-helveltica-medium cierralo-purplish-grey-two edit-contact-mail">55 6782 4523</p>
+          </a>
+          <i class="fa fa-lock edit-profile-icon" aria-hidden="true"></i>
+          <i class="fa fa-pencil-square-o edit-profile-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="edit-profile-divider">
+
+    </div>
+    <div class="change-password-title-container">
+      <h1 class="change-password-title-center cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Cambiar contraseña</h1>
+      <div class="inline-block arrow-down">
+        
+      </div>
+    </div>
+    <div class="cierralo-pre-footer-divider cierralo-flex-row">
+
+    </div>
+  </div>
+{% endblock %}

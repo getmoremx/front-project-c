@@ -1,0 +1,88 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+{% include 'partials/greyNavbar.njk' %}
+<div id="content" role="main" class="cierralo-content">
+    <div class="login-header cierralo-flex-colum">
+      <p class="login-title cierralo-font-helveltica-medium cierralo-grey-text">Favoritos</p>
+    </div> 
+    <div class="login-divider">
+
+    </div>
+    <div class="favorite-subtitle-box cierralo-flex-colum">
+      <p class="favorite-subtitle cierralo-font-helveltica-medium cierralo-grey-text">Te han gustado las siguientes propiedades:</p>
+    </div> 
+    <div class="favorite-icon-box">
+      <i class="fa fa-heart icon-love-favorite" aria-hidden="true"></i>
+    </div>
+    <div class="favorite-container cierralo-flex-row">
+      <div class="favorite-building-description-container cierralo-flex-colum inline-block">
+        <div class="favorite-building-photo-container">
+          <img src="./img/group-4.png" alt="" class="favorite-building-photo-offer inline-block">
+          <div class="favorite-building-cost-container inline-block">
+            <p class="favorite-building-cost-text cierralo-font-helveltica-neue-light letter-spacing-dot-four cierralo-white-text">3.6 MDP</p>
+          </div>
+        </div>
+        <div class="favorite-building-description-services-container cierralo-flex-row">
+          <div class="favorite-service-container cierralo-flex-colum">
+            <div class="favorite-service-icon-container">
+              <img src="./img/icons/group-9@3x.png" alt="" class="favorite-service-icon">
+            </div>
+            <p class="favorite-service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">Departamento</p>
+          </div>
+          <div class="favorite-service-container cierralo-flex-colum">
+            <div class="favorite-service-icon-container">
+              <img src="./img/icons/page-1@3x.png" alt="" class="favorite-service-icon">
+            </div>
+            <p class="favorite-service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">m2</p>
+          </div>
+          <div class="favorite-service-container cierralo-flex-colum">
+            <div class="favorite-service-icon-container">
+              <img src="./img/icons/fill-1@3x.png" alt="" class="favorite-service-icon">
+            </div>
+            <p class="favorite-service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">2 cuartos</p>
+          </div>
+          <div class="favorite-service-container cierralo-flex-colum">
+            <div class="favorite-service-icon-container">
+              <img src="./img/icons/group-3@3x.png" alt="" class="favorite-service-icon">
+            </div>
+            <p class="favorite-service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">2 baños</p>
+          </div>
+          <div class="favorite-service-container cierralo-flex-colum">
+            <div class="favorite-service-icon-container">
+              <img src="./img/icons/group@3x.png" alt="" class="favorite-service-icon">
+            </div>
+            <p class="favorite-service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">Piso 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="favorite-building-info-container inline-block">
+        <div class="seller-user-box-photo">
+          <img src="./img/dude.png" alt="" class="favorite-user-circle-photo inline-block">
+          <div class="favorite-user-name-container inline-block">
+            <p class="favorite-user-type cierralo-font-helveltica-medium cierralo-grey-text letter-spacing-dot-six">Propietario</p>
+            <p class="favorite-user-name cierralo-font-helveltica-bold letter-spacing-dot-six cierralo-orange-text">José Martínez</p>
+          </div>
+        </div>
+        <h1 class="favorite-building-offer-street-name cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-medium">Colima 228</h1>
+        <p class="favorite-building-offer-street-place cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-purplish-grey">Roma Norte</p>
+        <div class="favorite-information-divider">
+          
+        </div>
+        <p class="favorite-building-full-street inline-block favorite-text-color letter-spacing-dot-six cierralo-font-helveltica-neue-light">Calle Colíma No. 228 Colonia Roma Norte, delegación Cuauhtémoc. C.P. 06700, Ciudad de México.</p>
+        <a href="./scheduling.html" class="no-decoration">
+          <button class="cierralo-font-helveltica-neue favorite-date-it-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer inline-block letter-spacing-dot-six" id="closeItButton">Cita</button>
+        </a>
+        <a href="./makeOffer.html" class="no-decoration">
+          <button class="cierralo-font-helveltica-neue favorite-offer-it-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer inline-block letter-spacing-dot-six" id="closeItButton">Oferta</button>
+        </a>
+      </div>
+    </div>
+    <div class="cierralo-pre-footer-divider cierralo-flex-row">
+
+    </div>
+</div>
+{% endblock %}

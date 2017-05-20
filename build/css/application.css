@@ -62,6 +62,7 @@
     background: #ffffff;
     padding-top: 5px;
     padding-bottom: 5px;
+    z-index: +1;
 }
 section {
     width:100%;
@@ -106,8 +107,8 @@ section {
 .cierralo-default-btn:focus {
     outline:none;
 }
-.cierralo-buttons-container {
-    margin-top: 26px;
+.cierralo-buttons-landing-container {
+    margin-top: 35px;
 }
 .cierralo-btn-secondary {
     background-color: #e66700;
@@ -345,6 +346,12 @@ span.textLogo {
 }
 .fitLogo {
     width: 145px;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 17px;
+}
+.no-decoration{
+    text-decoration: none;
+}
+button{
+    outline: none !important;
 }

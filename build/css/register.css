@@ -1,0 +1,64 @@
+.register-header{
+	padding-top: 18px;
+}
+.register-title{
+	font-size: 25px;
+	line-height: 56px;
+	margin: 0px;
+}
+.user-type-box.active:hover{
+	background: #F7971C;
+	-webkit-box-shadow:inset 0px 0px 0px 1px #F7971C;
+	-moz-box-shadow:inset 0px 0px 0px 1px #F7971C;
+	box-shadow:inset 0px 0px 0px 1px #F7971C;
+}
+.user-type-box.active{
+	background-color: #e66700;
+	color: #FFFFFF !important;
+	-webkit-box-shadow:inset 0px 0px 0px 1px #e66700;
+	-moz-box-shadow:inset 0px 0px 0px 1px #e66700;
+	box-shadow:inset 0px 0px 0px 1px #e66700;
+}
+.user-type-text{
+	text-align: center;
+	font-size: 15px;
+	line-height: 14px;
+}
+.user-type-box{
+	width: 116px;
+	height: 63px;
+	color: #9b9b9b;
+	-webkit-box-shadow:inset 0px 0px 0px 1px #757176;
+	-moz-box-shadow:inset 0px 0px 0px 1px #757176;
+	box-shadow:inset 0px 0px 0px 1px #757176;
+	margin-left: 6px;
+	margin-right: 6px;
+	transition: all 0.2s linear;
+	-webkit-transition:: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+}
+.register-input{
+	width: 325px;
+	height: 47px;
+	background-color: #FFFFFF;
+	padding: 0px;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    -moz-box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.register-container{
+	padding-right: 95px;
+}
+.register-body{
+	padding-top: 58px;
+}
+.mobile-input{
+	display: none;
+}
+.user-options-container{
+	padding-top: 2px;
+}
