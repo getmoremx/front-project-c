@@ -53,7 +53,7 @@ module.exports = {
   },
   etc: {
     domain: '',
-    projectName: 'front project c',
+    projectName: 'Ciérralo',
     formattedName: package
   }
 };
