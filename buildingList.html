@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+
+    
+    <link rel="stylesheet" href="./css/front_project_c.libs.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/application.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!--Profile css file-->
+    <link rel="stylesheet" href="./css/profile.css">
+    <!--All building list css file-->
+    <link rel="stylesheet" href="./css/buildingList.css">
+    <!--Building details css file-->
+    <link rel="stylesheet" href="./css/buildingDetail.css">
+    <!--Make offer css file-->
+    <link rel="stylesheet" href="./css/makeOffer.css">
+    <!--Login css file-->
+    <link rel="stylesheet" href="./css/login.css">
+    <!--Register css file-->
+    <link rel="stylesheet" href="./css/register.css">
+    <!--Grey navbar css file-->
+    <link rel="stylesheet" href="./css/greyNavbar.css">
+    <!--Favorites css file-->
+    <link rel="stylesheet" href="./css/favorites.css">
+    <!--Dashboard css file-->
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!--Profile Edit css file-->
+    <link rel="stylesheet" href="./css/profileEdit.css">
+    <!--Scheduling css file-->
+    <link rel="stylesheet" href="./css/scheduling.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/schedule.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postAparmentFeatures.css">
+    <!--Slick css file-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
+    <!--FontAwesome css file-->
+    <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Ciérralo</title>
+  </head>
+  <body id="body">
+    <div id="page">
+        
+            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>
+<nav id="navigation" class="cierralo-navbar">
+    <a class="navbar-brand" href="./">
+        <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
+    </a>
+    <ul class="nav navbar-nav navbar-right" id="cierralo-main-navbar">
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./buildingList.html">Departamentos</a></li>
+            <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="#">Cómo funciona</a></li>
+            <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./login.html">Inicia sesión</a></li>
+            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
+                <a href="/register.html" class="no-padding-top">
+                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
+                </a>
+            </li>
+            <li class="cierralo-font-helveltica-medium" class="no-padding-top">
+                <a href="/login.html" class="no-padding-top">
+                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
+                </a>
+            </li>
+            <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
+                <a href="./login.html">
+                    <img src="./img/icons/page-1-copy-5@3x.png" class="navbar-phone-icon">
+                </a>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+            </li>
+            <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
+                <a href="./login.html">
+                    <img src="./img/icons/page-1-copy-4@3x.png" class="navbar-whatsapp-icon">
+                </a>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+            </li>
+        </ul>
+        <div hidden="" class="cierralo-show-in-movil">
+            <a class="cierralo-center-flex" href="/">
+                <img src="./img/android-chrome-192x192.png" class="cierralo-logo-comparative">
+            </a>
+        </div>
+    </ul>
+</nav>
+        
+        
+            <main id="main" class="">
+        
+            
+
+<div id="list-building" class="cierralo-default-section content scaffold-list" role="main">
+            <p class="cierralo-title cierralo-font-helveltica-medium">Todas las propiedades</p>
+
+            <div class="cierralo-default-divider"></div>
+            <div class="cierralo-all-building-container">
+                <div class="cierralo-all-buildings">
+                </div>
+                <div class="cierralo-filter-buildings">
+                    <div class="cierralo-font-helveltica-neue-light cierralo-filter-left">
+                        <div>
+                            <div>Precio</div>
+                            <div class="cierralo-filter-divider"></div>
+                            <div class="cierralo-slider">
+                                <section class="range-slider">
+                                    <div class="slider-value-container inline-block" id="slide-box-1">
+                                        <p class="slider-value letter-spacing-dot-one cierralo-white-text cierralo-font-helveltica-neue-light" id="slider-1"></p>
+                                    </div>
+                                    <input value="4.4" min="3.5" max="5.0" step="0.1" type="range" class="filter-slider">
+                                    <div class="slider-value-container inline-block" id="slide-box-2">
+                                        <p class="slider-value letter-spacing-dot-one cierralo-white-text cierralo-font-helveltica-neue-light" id="slider-2"></p>
+                                    </div>
+                                    <input value="5.0" min="3.5" max="5.0" step="0.1" type="range" class="filter-slider">
+                                    <div class="range-text-container">
+                                        <p class="range-text inline-block cierralo-font-helvetica-thin cierralo-pinkish-grey-two float-left">Min.</p>
+                                        <p class="range-text inline-block cierralo-font-helvetica-thin cierralo-pinkish-grey-two float-right">Max.</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="municipality-container">
+                            <div>Delegación</div>
+                            <div class="cierralo-filter-divider"></div>
+                        </div>
+                        <div class="share-container cierralo-flex-row-flex-start">
+                            <p class="share-text inline-block cierralo-font-helveltica-neue-light cierralo-pinkish-grey letter-spacing-dot-six">Comparte: </p>
+                            <div class="share-icons-box inline-block">
+                                <a href="" class="building-list-share-link cursor-pointer">
+                                    <img src="./img/icons/twitter-logo-button@3x.png" alt="" class="inline-block building-list-share-icon">
+                                </a>
+                                <a href="" class="building-list-share-link cursor-pointer">
+                                    <img src="./img/icons/facebook-logo-button@3x.png" alt="" class="inline-block building-list-share-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cierralo-default-divider"></div>
+        </div>
+
+        </main>
+        
+      <footer class="site-footer">
+  <div class="footer cierralo-font-helveltica-thin" role="contentinfo">
+        <div class="cierralo-main-footer cierralo-flex-colum">
+            <div class="cierralo-row-one cierralo-flex-row cierralo-max-width">
+                <div class="cierralo-flex-colum cierralo-no-center">
+                    <a href="./">
+                        <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
+                    </a>
+                    <p>© 2017</p>
+                </div>
+                <div class="cierralo-adjust-footer">
+                    <ul class="cierralo-footer-list">
+                        <li>Contacto</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Acerca de nosotros</li>
+                    </ul>
+                    <ul class="cierralo-footer-list">
+                        <li>info@cierralo.com</li>
+                        <li><a href="tel:45674323" class="cierralo-phone">(55) 4567 4323</a></li>
+                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left"></li>
+                    </ul>
+                </div>
+                <div class="cierralo-footer-right">
+                    <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
+                </div>
+            </div>
+            <div class="cierralo-footer-divider cierralo-flex-row">
+
+            </div>
+            <div class="cierralo-footer-last-text cierralo-flex-row">
+                <div>
+                    Términos y condiciones
+                </div>
+                <div class="cierralo-pointer">
+                    .
+                </div>
+                <div>
+                    Aviso de privacidad
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script src="./js/front_project_c.libs.js"></script>
+    
+    
+    <script src="./js/front_project_c.js"></script>
+    
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        
+            <script src="./js/buildingList.js"></script>
+        
+        <script src="./js/navbar.js"></script>
+    
+  </body>
+</html>
