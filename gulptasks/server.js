@@ -6,7 +6,7 @@ var gulp = require('gulp'),
   production = argv.production,
   filesDir = production ? config.paths.dist : config.paths.build;
 
-portfinder.basePort = 8080;
+portfinder.basePort = 5600;
 
 gulp.task('server:run', function() {
   portfinder.getPort(function (err, availablePort) {
